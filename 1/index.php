@@ -1,2 +1,2 @@
 <?php
-echo '<strong>Hello, SAE!</strong>';
+echo '<strong>Hello, Shopping Cat</strong>';
