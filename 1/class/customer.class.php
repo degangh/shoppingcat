@@ -9,6 +9,8 @@ class Customer
 
 		$r = $db->pdo->query($sql);
 
+		return $r->fetchAll();
+
 
 	}
 
