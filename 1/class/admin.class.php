@@ -11,7 +11,7 @@ class dbConn
 
 	public static function dbInit()
 	{
-		if (null !== self::instance))
+		if (null !== self::instance)
 		{
 			$object = __CLASS__;
 			self::instance = new $object;
