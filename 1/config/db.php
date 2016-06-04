@@ -12,6 +12,4 @@ $db_selected = mysql_select_db("app_shoppingcat", $dbc);
 
 $pdo = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
 
-print_r($pdo);
-
 ?>
