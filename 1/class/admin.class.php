@@ -2,7 +2,7 @@
 class dbConn
 {
 	public $pdo;
-	private static $instance
+	private static $instance;
 
 	private function __construct()
 	{
