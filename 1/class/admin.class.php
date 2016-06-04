@@ -7,11 +7,18 @@ class adminUser
 		//echo $q;
 		$pdo = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
 
-
 		$r = $pdo->query($q);
 		//print_r($r);
 
-		return $r->rowCount();
+		if ($r->rowCount() == 1)
+		{
+			$rt = array("response_code"=>200);
+		}
+		else {
+			$rt = array("response_code"=>404);# code...
+		}
+
+		return json_encode($rt);
 
 
 
