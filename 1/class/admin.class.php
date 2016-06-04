@@ -11,7 +11,7 @@ class adminUser
 		$r = $pdo->query($q);
 		//print_r($r);
 
-		return mysql_num_rows($r);
+		return $r->rowCount();
 
 
 
