@@ -9,7 +9,7 @@ class adminUser
 		$q = "select * from admin where username ='".$username."' and password='".$passowrd."'";
 		//echo $q;
 
-		$r = $_GLOBAL['pdo']->query($q);
+		$r = $pdo->query($q);
 		//print_r($r);
 
 		if ($r->rowCount() == 1)
