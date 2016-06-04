@@ -31,9 +31,9 @@ class adminUser
 		$q = "select * from admin where username ='".$username."' and password='".$passowrd."'";
 		//echo $q;
 
-		$pdo = dbConn::dbInit();
+		$db = dbConn::dbInit();
 
-		$r = $pdo->query($q);
+		$r = $db->pdo->query($q);
 		//print_r($r);
 
 		if ($r->rowCount() == 1)
