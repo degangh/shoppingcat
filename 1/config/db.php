@@ -1,15 +1,25 @@
 <?php
-/*
-$dbc = mysql_connect("localhost", "n1503z1k4n", "h54jzlmzmzy1x33l1kz5iwkk3xj53z345jl4im30");
+/* singleton model */
 
-if (!$dbc)  die('Could not connect DB: ' . mysql_error());
+class dbConn
+{
+	public $pdo;
+	private static $instance;
 
-mysql_query("SET NAMES UTF8");
+	private function __construct()
+	{
+		$this->pdo = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
+	}
 
-$db_selected = mysql_select_db("app_shoppingcat", $dbc);
+	public static function dbInit()
+	{
+		if (!isset(self::$instance))
+		{
+			$object = __CLASS__;
+			self::$instance = new $object;
+		}
 
-*/
-
-$pdo = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
-
+		return self::$instance;
+	}
+}
 ?>
