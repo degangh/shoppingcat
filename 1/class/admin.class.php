@@ -4,7 +4,7 @@ class adminUser
 
 
 
-	public function user_login($username,$passowrd)
+	public function user_login($username,$passowrd,$pdo)
 	{
 		$q = "select * from admin where username ='".$username."' and password='".$passowrd."'";
 		//echo $q;
@@ -29,11 +29,11 @@ class adminUser
 
 }
 
-$_GLOBAL['pdo'] = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
+$pdo = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
 
 
 $admin = new adminUser;
 
-$r = $admin->user_login("degang",md5("123456"));
+$r = $admin->user_login("degang",md5("123456"),$pdo);
 
 print_r($r);
