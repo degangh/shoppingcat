@@ -8,10 +8,10 @@ class adminUser
 		$pdo = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
 
 
-		$r = $pdo->quer($q);
+		$r = $pdo->query($q);
 		//print_r($r);
 
-		return $r;
+		return mysql_num_rows($r);
 
 
 
