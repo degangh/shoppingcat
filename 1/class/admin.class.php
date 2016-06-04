@@ -11,13 +11,13 @@ class dbConn
 
 	public static function dbInit()
 	{
-		if (null !== self::instance)
+		if (isset(self::$instance))
 		{
 			$object = __CLASS__;
-			self::instance = new $object;
+			self::$instance = new $object;
 		}
 
-		return self::instance;
+		return self::$instance;
 	}
 }
 
