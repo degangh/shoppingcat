@@ -9,7 +9,7 @@ class dbConn
 		$this->pdo = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
 	}
 
-	public function dbInit()
+	public static function dbInit()
 	{
 		if (!isset(self::instance))
 		{
