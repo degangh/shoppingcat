@@ -9,7 +9,9 @@ class adminUser
 
 
 		$r = $pdo->query($q);
-		print_r($r);
+		//print_r($r);
+
+		return $r;
 
 
 
