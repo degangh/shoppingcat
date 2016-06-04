@@ -2,12 +2,7 @@
 class adminUser
 {
 
-	private $pdo;
 
-	function __construct($pdo)
-	{
-		$this->$pdo = $pdo;
-	}
 
 	public function user_login($username,$passowrd)
 	{
@@ -34,10 +29,10 @@ class adminUser
 
 }
 
-$pdo = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
+$_GLOBAL['pdo'] = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
 
 
-$admin = new adminUser($pdo);
+$admin = new adminUser;
 
 $r = $admin->user_login("degang",md5("123456"));
 
