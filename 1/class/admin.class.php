@@ -1,7 +1,7 @@
 <?
 class adminUser
 {
-	public function user_login($username,$passowrd,$dbc)
+	public function user_login($username,$passowrd)
 	{
 		$q = "select * from admin where username ='".$username."' and passowrd='".$passowrd."'";
 
