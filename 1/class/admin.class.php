@@ -6,7 +6,7 @@ class adminUser
 
 	function __construct($pdo)
 	{
-		$this->$pdo = $pdo
+		$this->$pdo = $pdo;
 	}
 
 	public function user_login($username,$passowrd)
