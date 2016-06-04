@@ -6,8 +6,10 @@ class Customer
 		$sql = "select * from customer where cid = '".$cid."'";
 
 		$db = dbConn::dbInit();
+		$db->pdo->query("set NAMES utf8");
 
 		$r = $db->pdo->query($sql);
+
 
 		return $r->fetchAll();
 
