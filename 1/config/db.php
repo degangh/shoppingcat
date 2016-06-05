@@ -9,6 +9,7 @@ class dbConn
 	private function __construct()
 	{
 		$this->pdo = new PDO("mysql:host=".SAE_MYSQL_HOST_M.";port=".SAE_MYSQL_PORT.";dbname=".SAE_MYSQL_DB, SAE_MYSQL_USER, SAE_MYSQL_PASS);
+		$this->pdo->query("set NAMES utf8")
 	}
 
 	public static function dbInit()
