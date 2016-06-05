@@ -11,7 +11,7 @@ class Customer
 		$r = $db->pdo->query($sql);
 
 
-		return json_encode($r->fetchAll());
+		return $r->fetchAll();
 
 
 	}
