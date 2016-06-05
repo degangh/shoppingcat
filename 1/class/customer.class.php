@@ -11,7 +11,7 @@ class Customer
 		$r = $db->pdo->query($sql);
 
 
-		return $r->fetchAll();
+		return json_encode($r->fetchAll());
 
 
 	}
@@ -26,6 +26,10 @@ class Customer
 		$sql = "select * from customer";
 
 		$db = dbConn::dbInit();
+
+		$r = $db->pdo->query($sql);
+
+		return $r-fetchAll();
 	}
 }
 
@@ -33,7 +37,7 @@ include ("../config/db.php");
 
 $cust_data = new Customer;
 
-$r = $cust_data->get_customer_by_id(1);
+$r = $cust_data->list_customer("",0);
 
 ?>
 <html xmlns=http://www.w3.org/1999/xhtml><head>                 <meta http-equiv=Content-Type content="text/html;charset=utf-8">
