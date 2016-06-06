@@ -64,7 +64,7 @@ class Customer
 
 		$r = $db->pdo->query($sql);
 
-		return json_encode($r->fetchAll());
+		return json_encode($r->fetchAll(PDO::FETCH_ASSOC));
 	}
 }
 
