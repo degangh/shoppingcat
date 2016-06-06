@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	<h3>Login to CRM</h3>
+	<h3>Login to ShoppingCat CRM</h3>
 	<div class="container">
 		<form class="form-horizontal" role="form">
   		<div class="form-group">
