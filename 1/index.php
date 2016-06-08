@@ -13,7 +13,9 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 
 <body>
 
+<?
 echo '<h2>Hello, Shopping Cat！</h2>';
+?>
 
 <script src="static/jquery-2.2.4.min.js"></script>
 <script src="static/bs/js/bootstrap.js"></script>
