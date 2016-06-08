@@ -37,7 +37,10 @@
 <script>
 $(document).ready(function(){
 	$("#login_submit").click(function(){
-		alert ($.getJSON("../agent/auth.agent.php"));
+		username = $("#username").val();
+		password = $("#pwd").val();
+
+		alert (username + " " + password);
 
 	});
 });
