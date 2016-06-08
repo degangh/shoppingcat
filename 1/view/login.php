@@ -46,7 +46,13 @@ $(document).ready(function(){
 		url: "../agent/auth.agent.php",
 		data: "username="+username+"&password="+password,
 		success: function (data) {
-			alert (data.response_code);
+			if (data.response_code == 200)
+			{
+				alert ("login done!");
+			}
+			else {
+				alert ("go die");
+			}
 		}
 
 
