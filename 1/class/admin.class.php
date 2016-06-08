@@ -31,11 +31,3 @@ class adminUser
 
 
 }
-
-include ("../config/db.php");
-
-$admin = new adminUser;
-
-$r = $admin->user_login("degang",md5("123456"));
-
-print_r($r);
