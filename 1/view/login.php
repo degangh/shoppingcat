@@ -40,7 +40,19 @@ $(document).ready(function(){
 		username = $("#username").val();
 		password = $("#pwd").val();
 
+
 		alert (username + " " + password);
+
+		$.ajax({type: "POST",
+		url: "../agent/auth.agent.php",
+		data: "username="+username+"&passowrd="+password,
+		success: function (data) {
+			alert (data.response_code);
+		}
+
+
+
+		});
 
 	});
 });
