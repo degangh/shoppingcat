@@ -2,7 +2,21 @@
 session_start();
 include_once "config/db.php";
 
-if ($_SESSION['username'] != "") echo $_SESSION['username']." login";
+if ($_SESSION['username'] == "") header ("location:view/login.php");
+?>
+<html>
+<head>
+	<title>User Login</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="static/bs/css/bootstrap.css" rel="stylesheet">
+</head>
 
+<body>
 
-echo '<strong>Hello, Shopping Cat！</strong>';
+echo '<h2>Hello, Shopping Cat！</h2>';
+
+<script src="static/jquery-2.2.4.min.js"></script>
+<script src="static/bs/js/bootstrap.js"></script>
+</body>
+
+</html>
