@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once "config/db.php";
+include_once "class/customer.class.php"
 
 if ($_SESSION['username'] == "") header ("location:view/login.php");
 ?>
@@ -14,7 +15,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <body>
 
 <?
-echo '<h2>Hello, Shopping Cat！</h2>';
+echo '<h2>Hello '.$_SESSION['username'].', Shopping Cat！</h2>';
 ?>
 
 <script src="static/jquery-2.2.4.min.js"></script>
