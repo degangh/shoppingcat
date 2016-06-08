@@ -37,7 +37,8 @@
 <script>
 $(document).ready(function(){
 	$("#login_submit").click(function(){
-		alert ("oops");
+		alert ($.getJSON("../agent/auth.agent.php"));
+
 	});
 });
 </script>
