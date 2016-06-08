@@ -33,7 +33,7 @@
 	</div>
 </body>
 <script src="../static/jquery-2.2.4.min.js"></script>
-<script src="../static/js/bootstrap.js"></script>
+<script src="../static/bs/js/bootstrap.js"></script>
 <script>
 $(document).ready(function(){
 	$("#login_submit").click(function(){
@@ -41,7 +41,7 @@ $(document).ready(function(){
 		password = $("#pwd").val();
 
 
-		
+
 		$.ajax({type: "POST",
 		url: "../agent/auth.agent.php",
 		data: "username="+username+"&passowrd="+password,
