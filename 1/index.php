@@ -15,7 +15,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <body>
 
 <?
-echo '<h2>Hello '.$_SESSION['username'].', Shopping Cat！</h2>';
+echo "<h3>Hello ".$_SESSION['username'].", Shopping Cat CRM</h3>";
 ?>
 
 <script src="static/jquery-2.2.4.min.js"></script>
