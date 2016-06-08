@@ -7,7 +7,8 @@ if ($_POST)
 
 	echo $admin_user->login($_POST['username'],$_POST['password']);
 }
-
+/*
 else {
 	echo json_encode(array("response_code"=>400));# code...
 }
+*/
