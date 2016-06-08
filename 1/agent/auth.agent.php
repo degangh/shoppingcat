@@ -1,4 +1,5 @@
 <?
+include_once "../config/db.php";
 include_once "../class/admin.class.php";
 
 if ($_POST)
