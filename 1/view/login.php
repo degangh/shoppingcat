@@ -25,7 +25,7 @@
   		</div>
   		<div class="form-group">
     	<div class="col-sm-offset-2 col-sm-10">
-      		<button type="submit" class="btn btn-default">Submit</button>
+      		<button type="submit" class="btn btn-default" id="login_submit">Submit</button>
     	</div>
   		</div>
 		</form>
@@ -34,5 +34,11 @@
 </body>
 <script src="../static/jquery-2.2.4.min.js"></script>
 <script src="../static/js/bootstrap.js"></script>
-
+<script>
+$(document).ready(function(){
+	$("#login_submit").click(function(){
+		alert ("oops");
+	});
+});
+</script>
 </html>
