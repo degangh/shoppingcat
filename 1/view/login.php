@@ -41,8 +41,7 @@ $(document).ready(function(){
 		password = $("#pwd").val();
 
 
-		alert (username + " " + password);
-
+		
 		$.ajax({type: "POST",
 		url: "../agent/auth.agent.php",
 		data: "username="+username+"&passowrd="+password,
