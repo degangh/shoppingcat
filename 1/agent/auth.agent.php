@@ -1,7 +1,7 @@
 <?
 include_once "../class/admin.class.php";
 
-if ($_POST['username'] && $_POST['password'])
+if ($_POST)
 {
 	$admin_user = new adminUser();
 
