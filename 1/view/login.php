@@ -46,7 +46,7 @@ $(document).ready(function(){
 		url: "../agent/auth.agent.php",
 		data: "username="+username+"&passowrd="+password,
 		success: function (data) {
-			alert (data);
+			alert (data.response_code);
 		}
 
 
