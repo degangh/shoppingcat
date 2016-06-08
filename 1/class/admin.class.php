@@ -6,7 +6,7 @@ class adminUser
 
 	public function user_login($username,$passowrd)
 	{
-		$q = "select * from admin where username ='".$username."' and password=md5('".$passowrd."')";
+		$q = "select * from admin where username ='".$username."' and password=md5('".$password."')";
 		//echo $q;
 
 		$db = dbConn::dbInit();
