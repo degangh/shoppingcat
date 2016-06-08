@@ -1,6 +1,7 @@
 <?
 include_once "../config/db.php";
 include_once "../class/admin.class.php";
+session_start();
 
 if ($_POST)
 {
