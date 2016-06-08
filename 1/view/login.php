@@ -52,6 +52,7 @@ $(document).ready(function(){
 			if (data.response_code == 200)
 			{
 				alert ("login done!");
+				window.location.replace("../index.php")
 			}
 			else {
 				alert ("go die");
