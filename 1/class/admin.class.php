@@ -20,7 +20,7 @@ class adminUser
 			$_SESSION['username'] = $username;
 		}
 		else {
-			$rt = array("response_code"=>$q);# code...
+			$rt = array("response_code"=>404);# code...
 		}
 
 		return json_encode($rt);
