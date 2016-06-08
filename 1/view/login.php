@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 		$.ajax({type: "POST",
 		url: "../agent/auth.agent.php",
-		data: "username="+username+"&passowrd="+password,
+		data: "username="+username+"&password="+password,
 		success: function (data) {
 			alert (data.response_code);
 		}
