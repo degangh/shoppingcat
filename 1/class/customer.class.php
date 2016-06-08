@@ -67,16 +67,3 @@ class Customer
 		return json_encode($r->fetchAll(PDO::FETCH_ASSOC));
 	}
 }
-
-include ("../config/db.php");
-
-$cust_data = new Customer;
-
-$r = $cust_data->list_customer("",0);
-
-?>
-<html xmlns=http://www.w3.org/1999/xhtml><head>                 <meta http-equiv=Content-Type content="text/html;charset=utf-8">
-
-<?
-
-print_r ($r);
