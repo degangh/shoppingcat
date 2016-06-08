@@ -4,7 +4,7 @@ class adminUser
 
 
 
-	public function user_login($username,$passowrd)
+	public function user_login($username,$password)
 	{
 		$q = "select * from admin where username ='".$username."' and password=md5('".$password."')";
 		//echo $q;
