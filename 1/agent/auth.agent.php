@@ -5,7 +5,7 @@ if ($_POST)
 {
 	$admin_user = new adminUser();
 
-	echo $admin_user->login($_POST['username'],$_POST['password']);
+	echo $admin_user->user_login($_POST['username'],$_POST['password']);
 }
 
 else {
