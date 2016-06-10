@@ -19,7 +19,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 			<input type='text' id="keyword" class="form-control" name="keyword" placeholder="Search Key">
 		</div>
 		<div class="form-group">
-			<button type="button" class='btn btn-default'>Search</button>
+			<button type="button" class='btn btn-default' id="btn_search">Search</button>
 		</div>
 	</form>
 
@@ -32,7 +32,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script src="../static/bs/js/bootstrap.js"></script>
 <script>
 $(document).ready(function(){
-	$("button.btn").click(function(){
+	$("#btn_search").click(function(){
 		alert("clicked");
 		keyword = $("#keyword").val();
 
