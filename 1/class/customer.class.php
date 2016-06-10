@@ -62,7 +62,7 @@ class Customer
 
 		if (trim($keyword) !="")
 		{
-			$where = " where cname like '%".$keyword."%' or cname_init_py like ''%".$keyword."%'";
+			$where = " where cname like '%".$keyword."%' or cname_init_py like '%".$keyword."%'";
 		}
 
 		echo $sql.$where;
