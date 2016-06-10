@@ -16,9 +16,9 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <div class='container'>
 	<form role="form" class="form-inline">
 		<div class="form-group">
-			<input type='text' name="keyword" placeholder="Search Key">
+			<input type='text' class="form-control" name="keyword" placeholder="Search Key">
 		</div>
-		<div class="form-gourp">
+		<div class="form-group">
 			<button type="button" class='btn btn-default'>Search</button>
 		</div>
 	</form>
