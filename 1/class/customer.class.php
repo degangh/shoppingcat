@@ -62,12 +62,12 @@ class Customer
 
 		if (trim($keyword) !="")
 		{
-			$where = "where cname like '%".$keyword."%' or cname_init_py like ''%".$keyword."%'";
+			$where = " where cname like '%".$keyword."%' or cname_init_py like ''%".$keyword."%'";
 		}
 
 		$db = dbConn::dbInit();
 
-		$r = $db->pdo->query($sql);
+		$r = $db->pdo->query($sql.$where);
 
 		return json_encode($r->fetchAll(PDO::FETCH_ASSOC));
 	}
