@@ -16,7 +16,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <div class='container'>
 	<form role="form" class="form-inline">
 		<div class="form-group">
-			<input type='text' class="form-control" name="keyword" placeholder="Search Key">
+			<input type='text' id="keyword" class="form-control" name="keyword" placeholder="Search Key">
 		</div>
 		<div class="form-group">
 			<button type="button" class='btn btn-default'>Search</button>
@@ -34,6 +34,15 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 $(document).ready(function(){
 	$("button.btn").click(function(){
 		alert("clicked");
+		keyword = $("#keyword").val();
+
+		$.ajax({type:"POST",
+		url: "../agent/cust.list.agent.php",
+		data: "keyword="+ keyword;
+		success: function(data){
+			alert(data);
+		}
+		});
 	});
 });
 </script>
