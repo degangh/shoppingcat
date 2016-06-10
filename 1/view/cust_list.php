@@ -39,7 +39,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script>
 $(document).ready(function(){
 	$("#btn_search").click(function(){
-		alert("clicked");
+		//alert("clicked");
 		keyword = $("#keyword").val();
 
 		$.ajax({type:"POST",
