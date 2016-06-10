@@ -51,13 +51,13 @@ $(document).ready(function(){
 			//alert(data);
 			var len = data.length;
 			var txt = "";
-			$("#sch_table tr").remove();
+			$("#sch_table tr.data_row").remove();
 
 			if (len > 0)
 			{
 				for (var i=0; i<len; i++)
 				{
-					txt += "<tr><td>"+data[i].cname + "</td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
+					txt += "<tr class='data_row'><td>"+data[i].cname + "</td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
 				}
 				if (txt != "")
 				{
