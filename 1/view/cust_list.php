@@ -26,8 +26,9 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <div>
 	<table id="sch_table" class="hidden">
 	    <tr>
-	        <th>City</th>
-	        <th>Status</th>
+	        <th>Name</th>
+	        <th>Mobile</th>
+			<th>Address</th>
 	    </tr>
 	</table>
 </div>
@@ -53,7 +54,7 @@ $(document).ready(function(){
 			{
 				for (var i=0; i<len; i++)
 				{
-					txt += "<tr><td>"+data[i].cname + "</td><td>" + data[i].mobile + "</td></tr>";
+					txt += "<tr><td>"+data[i].cname + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
 				}
 				if (txt != "")
 				{
