@@ -38,7 +38,7 @@ $(document).ready(function(){
 
 		$.ajax({type:"POST",
 		url: "../agent/cust.list.agent.php",
-		data: "keyword="+ keyword;
+		data: "keyword="+ keyword,
 		success: function(data){
 			alert(data);
 		}
