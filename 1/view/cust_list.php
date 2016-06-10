@@ -30,5 +30,12 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 
 <script src="../static/jquery-2.2.4.min.js"></script>
 <script src="../static/bs/js/bootstrap.js"></script>
+<script>
+$(document).ready(function(){
+	$("button.btn").click(function(){
+		alert("clicked");
+	});
+});
+</script>
 </body>
 </html>
