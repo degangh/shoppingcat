@@ -42,7 +42,7 @@ $(document).ready(function(){
 	$("#btn_search").click(function(){
 		//alert("clicked");
 		keyword = $("#keyword").val();
-		alert(keyword);
+		//alert(keyword);
 
 		$.ajax({type:"POST",
 		url: "../agent/cust.list.agent.php",
