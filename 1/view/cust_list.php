@@ -24,7 +24,12 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	</form>
 
 <div>
-
+	<table id="sch_table" class="hidden">
+	    <tr>
+	        <th>City</th>
+	        <th>Status</th>
+	    </tr>
+	</table>
 </div>
 </div>
 
@@ -40,7 +45,25 @@ $(document).ready(function(){
 		url: "../agent/cust.list.agent.php",
 		data: "keyword="+ keyword,
 		success: function(data){
-			alert(data);
+			//alert(data);
+			var len = data.length;
+			var txt = "";
+
+			if (len > 0)
+			{
+				for (var i=0; i<len; i++)
+				{
+					txt += "<tr><td>"+data[i].cname + "</td><td>" + data[i].mobile + "</td></tr>";
+				}
+				if (txt != "")
+				{
+					$("#sch_table").append(txt).removeClass("hidden");
+				}
+			}
+			else {
+				alert ("no result");
+			}
+
 		}
 		});
 	});
