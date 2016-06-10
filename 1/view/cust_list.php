@@ -24,7 +24,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	</form>
 
 <div>
-	<table id="sch_table" class="hidden">
+	<table id="sch_table" class="hidden table table-striped">
 	    <tr>
 	        <th>Name</th>
 	        <th>Mobile</th>
