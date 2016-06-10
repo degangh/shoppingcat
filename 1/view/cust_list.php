@@ -19,7 +19,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 			<input type='text' name="keyword" placeholder="Search Key">
 		</div>
 		<div class="form-gourp">
-			<button type="button" value="Search" />
+			<button type="button" class='btn btn-default' value="Search" />
 		</div>
 	</form>
 
