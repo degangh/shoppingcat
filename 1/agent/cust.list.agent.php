@@ -1,5 +1,4 @@
 <?
-<?
 include_once "../config/db.php";
 include_once "../class/customer.class.php";
 session_start();
