@@ -65,6 +65,8 @@ class Customer
 			$where = " where cname like '%".$keyword."%' or cname_init_py like ''%".$keyword."%'";
 		}
 
+		echo $sql.$where;
+
 		$db = dbConn::dbInit();
 
 		$r = $db->pdo->query($sql.$where);
