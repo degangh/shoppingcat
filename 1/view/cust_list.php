@@ -50,6 +50,7 @@ $(document).ready(function(){
 			//alert(data);
 			var len = data.length;
 			var txt = "";
+			$("#sch_table tr").remove();
 
 			if (len > 0)
 			{
