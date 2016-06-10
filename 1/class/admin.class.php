@@ -29,5 +29,16 @@ class adminUser
 
 	}
 
+	public function verify_user()
+	{
+		if(isset($_SESSION['username']))
+		{
+			return json_encode(array("userlogin"=>TRUE));
+		}
+		else {
+			return json_encode(array("userlogin"=>FALSE));
+		}
+	}
+
 
 }
