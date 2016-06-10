@@ -60,6 +60,11 @@ class Customer
 	{
 		$sql = "select * from customer";
 
+		if (trim($keyword) !="")
+		{
+			$where = "where cname like '%".$keyword."%' or cname_init_py like ''%".$keyword."%'"
+		}
+
 		$db = dbConn::dbInit();
 
 		$r = $db->pdo->query($sql);
