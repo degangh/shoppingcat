@@ -73,13 +73,15 @@ function processSchData()
 					{
 						txt += "<tr class='data_row'><td>"+data[i].cname + "</td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
 					}
-					if (txt != "")
-					{
-						$("#sch_table").append(txt).removeClass("hidden");
-					}
+
 				}
 				else {
-					alert ("no result");
+					txt  = "<tr class = 'data_row'><td colspan=4>No Result \"" + keyword + "\" !</td></tr>";
+				}
+
+				if (txt != "")
+				{
+					$("#sch_table").append(txt).removeClass("hidden");
 				}
 
 			}
