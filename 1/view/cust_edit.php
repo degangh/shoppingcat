@@ -62,9 +62,10 @@ $(document).ready(function(){
 		var cname = $("#cname").val();
 		var mobile = $("#mobile").val();
 
-		alert (cname);
-
-		event.preventDefault();
+		if (cname == "")
+		{
+			$("#cname").closest(".form-group").addClass("has-error");
+		}
 
 	});
 
