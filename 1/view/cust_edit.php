@@ -61,8 +61,8 @@ $(document).ready(function(){
 
 	$(".btn-default").click(function(event){
 
-		$("input").removeClass("has-error");
-		
+		$(".form-group").removeClass("has-error");
+
 		var cname = $("#cname").val();
 		var mobile = $("#mobile").val();
 		var address = $("#address").val();
