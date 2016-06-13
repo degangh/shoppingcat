@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 		alert (cname);
 
-		preventDefault();
+		$(this).preventDefault();
 
 	});
 
