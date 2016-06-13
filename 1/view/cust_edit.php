@@ -19,6 +19,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	  <div class="form-group">
 	    <label for="cname">Name:</label>
 	    <input type="text" class="form-control" id="cname">
+		<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
 	  </div>
 	  <div class="form-group">
 	    <label for="cname_init_py">Name Initial Pinyin:</label>
