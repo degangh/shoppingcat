@@ -15,7 +15,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <body>
 <div class='container'>
 
-	<form role="form">
+	<form role="form" id='cust_form'>
 	  <div class="form-group">
 	    <label for="cname">Name:</label>
 	    <input type="text" class="form-control" id="cname">
@@ -43,6 +43,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
   		<label for="comment">Comment:</label>
   		<textarea class="form-control" rows="3" id="comment"></textarea>
 	  </div>
+	  <input type="hidden" id="cid" >
 
 	  <button type="button" class="btn btn-default">Submit</button>
 	</form>
@@ -51,3 +52,33 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 
 </div>
 </div>
+<script src="../static/jquery-2.2.4.min.js"></script>
+<script src="../static/bs/js/bootstrap.js"></script>
+<script>
+$(document).ready(function () {
+
+$('#cust_form').validate({
+    rules: {
+        cname: {
+            minlength: 2,
+            required: true
+        },
+        cname_init_py: {
+            required: true,
+            email: true
+        },
+        address: {
+            minlength: 2,
+            required: true
+        }
+    },
+    highlight: function (element) {
+        $(element).closest('.control-group').removeClass('success').addClass('error');
+    },
+    success: function (element) {
+        element.text('OK!').addClass('valid')
+            .closest('.control-group').removeClass('error').addClass('success');
+    }
+});
+});
+</script>
