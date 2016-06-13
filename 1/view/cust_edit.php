@@ -34,7 +34,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	    <label for="address">Address:</label>
 	    <input type="text" class="form-control" id="address">
 	  </div>
-	  <div class="form-group">
+	  <div class="form-group has-error">
 	    <label for="postcode">Postcode:</label>
 	    <input type="text" class="form-control" id="postcode">
 	  </div>
