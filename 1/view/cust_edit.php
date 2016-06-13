@@ -21,23 +21,30 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	    <input type="text" class="form-control" id="cname">
 	  </div>
 	  <div class="form-group">
-	    <label for="address">Address:</label>
-	    <input type="text" class="form-control" id="address">
-	  </div>
-	  <div class="form-group">
-	    <label for="cname_init_py">Email address:</label>
+	    <label for="cname_init_py">Name Initial Pinyin:</label>
 	    <input type="text" class="form-control" id="cname_init_py">
 	  </div>
+
+
 	  <div class="form-group">
 	    <label for="mobile">Mobile:</label>
 	    <input type="text" class="form-control" id="mobile">
+	  </div>
+	  <div class="form-group">
+	    <label for="address">Address:</label>
+	    <input type="text" class="form-control" id="address">
 	  </div>
 	  <div class="form-group">
 	    <label for="postcode">Postcode:</label>
 	    <input type="text" class="form-control" id="postcode">
 	  </div>
 
-	  <button type="submit" class="btn btn-default">Submit</button>
+	  <div class="form-group">
+  		<label for="comment">Comment:</label>
+  		<textarea class="form-control" rows="5" id="comment"></textarea>
+	  </div>
+
+	  <button type="button" class="btn btn-default">Submit</button>
 	</form>
 
 <div>
