@@ -64,12 +64,12 @@ $(document).ready(function(){
 
 		if (cname == "")
 		{
-			$("#cname").closest(".form-group").addClass("has-error","has-feeback");
+			$("#cname").closest(".form-group").addClass("has-error has-feeback");
 		}
 
 		if (address == "")
 		{
-			$("#address").closest(".form-group").addClass("has-error","has-feeback");
+			$("#address").closest(".form-group").addClass("has-error has-feeback");
 		}
 
 		event.preventDefault();
