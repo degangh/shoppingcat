@@ -34,14 +34,14 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	    <label for="address">Address:</label>
 	    <input type="text" class="form-control" id="address">
 	  </div>
-	  <div class="form-group has-error">
+	  <div class="form-group">
 	    <label for="postcode">Postcode:</label>
 	    <input type="text" class="form-control" id="postcode">
 	  </div>
 
 	  <div class="form-group">
   		<label for="comment">Comment:</label>
-  		<textarea class="form-control has-error" rows="3" id="comment"></textarea>
+  		<textarea class="form-control" rows="3" id="comment"></textarea>
 	  </div>
 	  <input type="hidden" id="cid" >
 
@@ -55,5 +55,18 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script src="../static/jquery-2.2.4.min.js"></script>
 <script src="../static/bs/js/bootstrap.js"></script>
 <script>
+$(document).ready(function{
 
+	$(".btn-default").click(function(){
+
+		var cname = $("#cname").val();
+		var mobile = $("#mobile").val();
+
+		alert (cname);
+
+	});
+
+
+
+});
 </script>
