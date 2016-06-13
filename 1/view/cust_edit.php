@@ -63,15 +63,40 @@ $(document).ready(function(){
 
 		var cname = $("#cname").val();
 		var mobile = $("#mobile").val();
+		var address = $("#address").val();
+		var postcode = $("#postcode").val();
+		var cname_init_py = $("#cname_init_py").val();
+	
+		var flag = true;
 
 		if (cname == "")
 		{
-			$("#cname").closest(".form-group").addClass("has-error has-feeback");
+			$("#cname").closest(".form-group").addClass("has-error");
+			flag = false;
 		}
 
 		if (address == "")
 		{
-			$("#address").closest(".form-group").addClass("has-error has-feeback");
+			$("#address").closest(".form-group").addClass("has-error");
+			flag = false;
+		}
+
+		if (mobile == "")
+		{
+			$("#mobile").closest(".form-group").addClass("has-error");
+			flag = false;
+		}
+
+		if (cname_init_py == "")
+		{
+			$("#cname_init_py").closest(".form-group").addClass("has-error");
+			flag = false;
+		}
+
+		if (postcode == "")
+		{
+			$("#postcode").closest(".form-group").addClass("has-error");
+			flag = false;
 		}
 
 		event.preventDefault();
