@@ -45,7 +45,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	  </div>
 	  <input type="hidden" id="cid" >
 
-	  <button type="button" class="btn btn-default">Submit</button>
+	  <button type="submit" class="btn btn-default">Submit</button>
 	</form>
 
 <div>
