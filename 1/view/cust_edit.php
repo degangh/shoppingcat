@@ -67,6 +67,8 @@ $(document).ready(function(){
 			$("#cname").closest(".form-group").addClass("has-error");
 		}
 
+		event.preventDefault();
+
 	});
 
 
