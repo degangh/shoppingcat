@@ -40,11 +40,12 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script>
 $(document).ready(function(){
 	$("#btn_search").on("click",processSchData);
+
 	$(document).keypress(function(e) {
-    if(e.which == 13) {
-        alert('You pressed enter!');
-		e.preventDefault();
-    }
+	    if(e.which == 13) {
+	        processSchData();
+			e.preventDefault();
+	    }
 
 	});
 });
