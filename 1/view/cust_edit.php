@@ -57,14 +57,14 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script>
 $(document).ready(function{
 
-	$(".btn-default").click(function(){
+	$(".btn-default").click(function(event){
 
 		var cname = $("#cname").val();
 		var mobile = $("#mobile").val();
 
 		alert (cname);
 
-		$this.preventDefault();
+		event.preventDefault();
 
 	});
 
