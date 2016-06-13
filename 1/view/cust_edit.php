@@ -41,7 +41,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 
 	  <div class="form-group">
   		<label for="comment">Comment:</label>
-  		<textarea class="form-control" rows="3" id="comment"></textarea>
+  		<textarea class="form-control has-error" rows="3" id="comment"></textarea>
 	  </div>
 	  <input type="hidden" id="cid" >
 
@@ -55,30 +55,5 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script src="../static/jquery-2.2.4.min.js"></script>
 <script src="../static/bs/js/bootstrap.js"></script>
 <script>
-$(document).ready(function () {
 
-$('#cust_form').validate({
-    rules: {
-        cname: {
-            minlength: 2,
-            required: true
-        },
-        cname_init_py: {
-            required: true,
-            email: true
-        },
-        address: {
-            minlength: 2,
-            required: true
-        }
-    },
-    highlight: function (element) {
-        $(element).closest('.control-group').removeClass('success').addClass('error');
-    },
-    success: function (element) {
-        element.text('OK!').addClass('valid')
-            .closest('.control-group').removeClass('error').addClass('success');
-    }
-});
-});
 </script>
