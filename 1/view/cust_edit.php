@@ -61,12 +61,14 @@ $(document).ready(function(){
 
 	$(".btn-default").click(function(event){
 
+		$("input").removeClass("has-error");
+		
 		var cname = $("#cname").val();
 		var mobile = $("#mobile").val();
 		var address = $("#address").val();
 		var postcode = $("#postcode").val();
 		var cname_init_py = $("#cname_init_py").val();
-	
+
 		var flag = true;
 
 		if (cname == "")
