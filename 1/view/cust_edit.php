@@ -64,6 +64,8 @@ $(document).ready(function{
 
 		alert (cname);
 
+		preventDefault();
+
 	});
 
 
