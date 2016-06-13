@@ -7,7 +7,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 
 <html>
 <head>
-	<title>User Login</title>
+	<title>Search User</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="../static/bs/css/bootstrap.css" rel="stylesheet">
 </head>
@@ -16,7 +16,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <div class='container'>
 	<form role="form" class="form-inline">
 		<div class="form-group">
-			<input type='text' id="keyword" class="form-control" name="keyword" placeholder="Search Key">
+			<input type='text' id="keyword" class="form-control" placeholder="Search Key">
 		</div>
 		<div class="form-group">
 			<button type="button" class='btn btn-default' id="btn_search">Search</button>
