@@ -39,39 +39,45 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script src="../static/bs/js/bootstrap.js"></script>
 <script>
 $(document).ready(function(){
-	$("#btn_search").click(function(){
-		//alert("clicked");
-		keyword = $("#keyword").val();
-		//alert(keyword);
-
-		$.ajax({type:"POST",
-		url: "../agent/cust.list.agent.php",
-		data: "keyword="+ keyword,
-		success: function(data){
-			//alert(data);
-			var len = data.length;
-			var txt = "";
-			$("#sch_table tr.data_row").remove();
-
-			if (len > 0)
-			{
-				for (var i=0; i<len; i++)
-				{
-					txt += "<tr class='data_row'><td>"+data[i].cname + "</td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
-				}
-				if (txt != "")
-				{
-					$("#sch_table").append(txt).removeClass("hidden");
-				}
-			}
-			else {
-				alert ("no result");
-			}
-
-		}
-		});
-	});
+	$("#btn_search").on("click",processSchData);
 });
+
+function processSchData()
+{
+
+
+			//alert("clicked");
+			keyword = $("#keyword").val();
+			//alert(keyword);
+
+			$.ajax({type:"POST",
+			url: "../agent/cust.list.agent.php",
+			data: "keyword="+ keyword,
+			success: function(data){
+				//alert(data);
+				var len = data.length;
+				var txt = "";
+				$("#sch_table tr.data_row").remove();
+
+				if (len > 0)
+				{
+					for (var i=0; i<len; i++)
+					{
+						txt += "<tr class='data_row'><td>"+data[i].cname + "</td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
+					}
+					if (txt != "")
+					{
+						$("#sch_table").append(txt).removeClass("hidden");
+					}
+				}
+				else {
+					alert ("no result");
+				}
+
+			}
+			});
+
+}
 </script>
 </body>
 </html>
