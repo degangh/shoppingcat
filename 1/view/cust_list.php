@@ -76,7 +76,7 @@ function processSchData()
 
 				}
 				else {
-					txt  = "<tr class = 'data_row' style='align:center'><td colspan=4>No Result <b>\"" + keyword + "\" </b> !</td></tr>";
+					txt  = "<tr class = 'data_row' style='text-align:center'><td colspan=4>No Result <b>\"" + keyword + "\" </b> !</td></tr>";
 				}
 
 				if (txt != "")
