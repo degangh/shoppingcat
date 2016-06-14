@@ -53,6 +53,8 @@ class Customer
 
 		$stmt->execute();
 
+		print_r($stmt->errorInfo());
+
 		print_r ($stmt);
 
 
