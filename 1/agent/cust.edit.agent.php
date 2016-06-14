@@ -16,7 +16,7 @@ if($_POST)
 
 		if ($r == TRUE)
 		{
-			echo json_encode(array("response_code"=>200));
+			echo json_encode(array("response_code"=>201));
 		}
 		else {
 			echo json_encode(array("response_code"=>-1));# code...
