@@ -49,8 +49,9 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
   		<textarea class="form-control" rows="3" id="comment"></textarea>
 	  </div>
 	  <input type="hidden" id="cid" >
-
+	  <div class = "col-md-12">
 	  <button type="submit" class="btn btn-default">Save 保存</button>
+  	</div>
 	</form>
 
 <div>
