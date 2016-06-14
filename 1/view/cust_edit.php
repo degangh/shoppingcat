@@ -124,7 +124,7 @@ $(document).ready(function(){
 			url: "../agent/cust.edit.agent.php",
 			data: query_str,
 			success: function(data){
-				alert(data);
+				alert(data.response_code);
 			}
 		});
 
