@@ -49,9 +49,9 @@ class Customer
 			$stmt->bindParam(":cid", $cid, PARAM_INT);
 		}
 
-		$stmt->execute();
+		return $stmt->execute();
 
-		//TBD
+
 
 
 	}
