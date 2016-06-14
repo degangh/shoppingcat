@@ -107,6 +107,11 @@ $(document).ready(function(){
 
 		//console.log(flag);
 
+		if (flag == true)
+		{
+			alert ("will submit");
+		}
+
 	});
 
 	$("input").focusout(function(){
@@ -123,10 +128,7 @@ $(document).ready(function(){
 		//console.log(flag);
 	});
 
-	if (flag == true)
-	{
-		alert ("will submit");
-	}
+
 
 
 
