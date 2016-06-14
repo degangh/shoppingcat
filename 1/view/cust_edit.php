@@ -107,6 +107,8 @@ $(document).ready(function(){
 
 		event.preventDefault();
 
+		console.log(flag);
+
 	});
 
 	$("input").focusout(function(){
@@ -118,9 +120,11 @@ $(document).ready(function(){
 		else {
 			$(this).closest(".form-group").removeClass("has-error");
 		}
+
+		console.log(flag);
 	});
 
-	console.log(flag);
+	
 
 
 
