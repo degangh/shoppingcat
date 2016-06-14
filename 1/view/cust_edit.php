@@ -7,7 +7,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 
 <html>
 <head>
-	<title>Search User</title>
+	<title>Edit User</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="../static/bs/css/bootstrap.css" rel="stylesheet">
 </head>
