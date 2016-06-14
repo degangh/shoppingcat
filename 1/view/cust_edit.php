@@ -115,6 +115,7 @@ $(document).ready(function(){
 
 		if (flag == true)
 		{
+			/*
 			alert ("will submit");
 
 			$.ajax({type:"POST",
@@ -123,7 +124,7 @@ $(document).ready(function(){
 			success: function(data){
 				alert(data.response_code);
 			}
-			});
+		});*/
 
 			console.log($("#cust_form").serialize());
 		}
