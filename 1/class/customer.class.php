@@ -49,11 +49,11 @@ class Customer
 			$stmt->bindParam(":cid", $cid, PARAM_INT);
 		}
 
-
+		print_r ($stmt);
 
 		return $stmt->execute();
 
-		print_r ($stmt);
+
 
 
 
