@@ -12,7 +12,15 @@ if($_POST)
 		$customer = new Customer;
 		$r = $customer->list_customer($cid,$_POST);
 
-		echo json_encode(array("response_code"=>200,"dataset"=>$r));
+		//echo json_encode(array("response_code"=>200,"dataset"=>$r));
+
+		if ($r == TRUE)
+		{
+			echo json_encode(array("response_code"=>200));
+		}
+		else {
+			echo json_encode(array("response_code"=>-1));# code...
+		}
 	}
 	else {
 		echo json_encode(array("response_code"=>401));# code...
