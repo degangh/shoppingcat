@@ -42,7 +42,7 @@ class Customer
 		$stmt->bindParam(":address",$post['address'],PDO::PARAM_STR);
 		$stmt->bindParam(":postcode",$post['postcode'],PDO::PARAM_STR);
 		$stmt->bindParam(":id_num",$post['id_num'],PDO::PARAM_STR);
-		$stmt->bindParam(":comment",$post['comment'],PDO::PARAM_STR);
+		$stmt->bindParam(":comment",$post['comment']);
 
 		if ($where_class != "")
 		{
