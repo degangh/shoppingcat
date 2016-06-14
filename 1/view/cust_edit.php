@@ -25,13 +25,13 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	    <input type="text" class="form-control required-field" id="cname_init_py">
 	  </div>
 
-	  <div class="form-group col-md-12">
+	  <div class="form-group col-md-6">
 	    <label for="cname_init_py">ID Number 身份证号码:</label>
 	    <input type="text" class="form-control" id="id_num">
 	  </div>
 
 
-	  <div class="form-group col-md-12">
+	  <div class="form-group col-md-6">
 	    <label for="mobile">Mobile 手机号码:</label>
 	    <input type="text" class="form-control required-field" id="mobile">
 	  </div>
