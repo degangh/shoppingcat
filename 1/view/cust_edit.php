@@ -17,17 +17,17 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 
 	<form role="form" id='cust_form'>
 	  <div class="form-group">
-	    <label for="cname">Name:</label>
+	    <label for="cname">Name 中文姓名:</label>
 	    <input type="text" class="form-control required-field" id="cname">
 	  </div>
 	  <div class="form-group">
-	    <label for="cname_init_py">Name Initial Pinyin:</label>
+	    <label for="cname_init_py">Name Initial Pinyin 拼音缩写:</label>
 	    <input type="text" class="form-control required-field" id="cname_init_py">
 	  </div>
 
 
 	  <div class="form-group">
-	    <label for="mobile">Mobile:</label>
+	    <label for="mobile">Mobile 手机号码:</label>
 	    <input type="text" class="form-control required-field" id="mobile">
 	  </div>
 	  <div class="form-group">
@@ -35,7 +35,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	    <input type="text" class="form-control required-field" id="address">
 	  </div>
 	  <div class="form-group">
-	    <label for="postcode">Postcode:</label>
+	    <label for="postcode">Postcode 邮编:</label>
 	    <input type="text" class="form-control" id="postcode">
 	  </div>
 
@@ -74,7 +74,6 @@ $(document).ready(function(){
 		if (cname == "")
 		{
 			$("#cname").closest(".form-group").addClass("has-error");
-			$("#cname").closest("label").css("font-color","#FF0000");
 			flag = false;
 		}
 
