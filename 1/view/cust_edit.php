@@ -125,8 +125,8 @@ $(document).ready(function(){
 				alert(data.response_code);
 			}
 		});*/
-
-			console.log($("form").serialize());
+			var str = $("#cust_form").serialize();
+			console.log(str);
 			console.log("oops");
 		}
 
