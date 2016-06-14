@@ -119,16 +119,16 @@ $(document).ready(function(){
 		{
 
 			alert ("will submit");
-
+			var query_str = "cname=" + cname + "&cname_init_py=" + cname_init_py + "&id_num=" + id_num + "&mobile=" + mobile + "&address=" + address + "&postcode=" + postcode + "&comment=" + comment;
 			$.ajax({type:"POST",
 			url: "../agent/cust.edit.agent.php",
-			data: "cname=" + cname + "&cname_init_py=" + cname_init_py + "&id_num=" + id_num + "&mobile=" + mobile + "&address=" + address + "&postcode=" + postcode + "&comment=" + comment,
+			data: query_str,
 			success: function(data){
 				alert(data.response_code);
 			}
 		});
 
-			console.log("oops");
+			console.log(query_str + "oops");
 		}
 
 	});
