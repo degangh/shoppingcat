@@ -119,13 +119,13 @@ $(document).ready(function(){
 
 			$.ajax({type:"POST",
 			url: "../agent/cust.edit.agent.php",
-			data: $("cust_form").serialize(),
+			data: $("#cust_form").serialize(),
 			success: function(data){
 				alert(data.response_code);
 			}
 			});
 
-			console.log($("cust_form").serialize());
+			console.log($("#cust_form").serialize());
 		}
 
 	});
