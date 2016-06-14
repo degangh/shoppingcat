@@ -108,15 +108,17 @@ $(document).ready(function(){
 	});
 
 	$("input").focusout(function(){
-		alert ($(this).val());
 		if ($(this).val() == "")
 		{
 			$(this).closest(".form-group").addClass("has-error");
+			flag = false;
 		}
 		else {
 			$(this).closest(".form-group").removeClass("has-error");
 		}
 	});
+
+	console.log(flag);
 
 
 
