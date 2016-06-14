@@ -116,6 +116,14 @@ $(document).ready(function(){
 		if (flag == true)
 		{
 			alert ("will submit");
+
+			$.ajax({type:"POST",
+			url: "../agent/cust.edit.agent.php",
+			data: $("cust_form").serialize(),
+			success: function(data){
+				alert(data.response_code);
+			}
+			});
 		}
 
 	});
