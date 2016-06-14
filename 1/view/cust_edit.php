@@ -72,8 +72,10 @@ $(document).ready(function(){
 		var cname = $("#cname").val();
 		var mobile = $("#mobile").val();
 		var address = $("#address").val();
-		//var postcode = $("#postcode").val();
+		var postcode = $("#postcode").val();
 		var cname_init_py = $("#cname_init_py").val();
+		var id_num = $("#id_num").val();
+		var comment = $("#comment").val();
 
 
 
@@ -115,18 +117,17 @@ $(document).ready(function(){
 
 		if (flag == true)
 		{
-			/*
+
 			alert ("will submit");
 
 			$.ajax({type:"POST",
 			url: "../agent/cust.edit.agent.php",
-			data: $("#cust_form").serialize(),
+			data: "cname=" + cname + "&cname_init_py=" + cname_init_py + "&id_num=" + id_num + "&mobile=" + mobile + "&address=" + address + "&postcode=" + postcode + "&comment=" + comment,
 			success: function(data){
 				alert(data.response_code);
 			}
-		});*/
-			var str = $("#cust_form").serialize();
-			console.log(str);
+		});
+
 			console.log("oops");
 		}
 
