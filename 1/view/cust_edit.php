@@ -123,7 +123,7 @@ $(document).ready(function(){
 		//console.log(flag);
 	});
 
-	if $(flag == true)
+	if (flag == true)
 	{
 		alert ("will submit");
 	}
