@@ -85,7 +85,7 @@ class Customer
 
 		$db = dbConn::dbInit();
 
-		$r = $db->pdo->query($sql.$where);
+		$r = $db->pdo->query($sql.$where.$order);
 
 		return json_encode($r->fetchAll(PDO::FETCH_ASSOC));
 	}
