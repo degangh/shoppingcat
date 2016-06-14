@@ -76,6 +76,7 @@ $(document).ready(function(){
 		var cname_init_py = $("#cname_init_py").val();
 		var id_num = $("#id_num").val();
 		var comment = $("#comment").val();
+		var cid = $("#cid").val();
 
 
 
@@ -119,7 +120,7 @@ $(document).ready(function(){
 		{
 
 			alert ("will submit");
-			var query_str = "cname=" + cname + "&cname_init_py=" + cname_init_py + "&id_num=" + id_num + "&mobile=" + mobile + "&address=" + address + "&postcode=" + postcode + "&comment=" + comment;
+			var query_str = "cid=" + cid + "&cname=" + cname + "&cname_init_py=" + cname_init_py + "&id_num=" + id_num + "&mobile=" + mobile + "&address=" + address + "&postcode=" + postcode + "&comment=" + comment;
 			$.ajax({type:"POST",
 			url: "../agent/cust.edit.agent.php",
 			data: query_str,
@@ -127,7 +128,7 @@ $(document).ready(function(){
 				if (data.response_code == 200)
 				{
 					alert ("用户添加成功");
-					$("input").val()="";
+					//$("input").val("");
 				}
 			}
 		});
