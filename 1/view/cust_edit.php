@@ -16,11 +16,11 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <div class='container'>
 
 	<form role="form" id='cust_form'>
-	  <div class="form-group col-md-4">
+	  <div class="form-group col-md-6">
 	    <label for="cname">Name 中文姓名:</label>
 	    <input type="text" class="form-control required-field" id="cname">
 	  </div>
-	  <div class="form-group col-md-4">
+	  <div class="form-group col-md-6">
 	    <label for="cname_init_py">Name Initial Pinyin 拼音缩写:</label>
 	    <input type="text" class="form-control required-field" id="cname_init_py">
 	  </div>
