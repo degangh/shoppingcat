@@ -8,4 +8,4 @@ $customer = new Customer;
 
 $post=array("cnmae"=>"耿玥","cname_init_py"=>"gy","mobile"=>"13436982179");
 
-echo $custome->update_customer_by_id($cid,$post);
+echo $customer->update_customer_by_id($cid,$post);
