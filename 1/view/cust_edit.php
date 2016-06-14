@@ -127,13 +127,13 @@ $(document).ready(function(){
 			success: function(data){
 				if (data.response_code == 200)
 				{
-					alert ("用户添加成功");
+					alert ("用户保存成功");
 					window.location.replace("cust_list.php");
 				}
 			}
 		});
 
-			console.log(query_str + "oops");
+			//console.log(query_str + "oops");
 		}
 
 	});
