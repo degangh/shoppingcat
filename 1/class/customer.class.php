@@ -39,7 +39,7 @@ class Customer
 		$stmt->bindParam(":cname",$post['cname'],PDO::PARAM_STR);
 		$stmt->bindParam(":cname_init_py",$post['cname_init_py'],PDO::PARAM_STR);
 		$stmt->bindParam(":mobile",$post['mobile'],PDO::PARAM_STR);
-		$stmt->bindParam(":adress",$post['address'],PDO::PARAM_STR);
+		$stmt->bindParam(":address",$post['address'],PDO::PARAM_STR);
 		$stmt->bindParam(":postcode",$post['postcode'],PDO::PARAM_STR);
 		$stmt->bindParam(":id_num",$post['id_num'],PDO::PARAM_STR);
 		$stmt->bindParam(":comment",$post['comment'],PDO::PARAM_STR);
@@ -50,6 +50,7 @@ class Customer
 		}
 
 		return $stmt->execute();
+
 
 
 
