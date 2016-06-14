@@ -128,7 +128,7 @@ $(document).ready(function(){
 				if (data.response_code == 200)
 				{
 					alert ("用户添加成功");
-					//$("input").val("");
+					window.location.replace("cust_list.php");
 				}
 			}
 		});
