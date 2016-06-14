@@ -36,7 +36,7 @@ class Customer
 
 		$stmt = $db->pdo->prepare($q);
 
-		$stmt->bindParam(":cname",$post['cname'],PDO::PARAM_STR);
+		$stmt->bindValue(":cname",$post['cname'],PDO::PARAM_STR);
 		$stmt->bindParam(":cname_init_py",$post['cname_init_py'],PDO::PARAM_STR);
 		$stmt->bindParam(":mobile",$post['mobile'],PDO::PARAM_STR);
 		$stmt->bindParam(":address",$post['address'],PDO::PARAM_STR);
@@ -49,10 +49,11 @@ class Customer
 			$stmt->bindParam(":cid", $cid, PARAM_INT);
 		}
 
-		print_r ($stmt);
+
 
 		return $stmt->execute();
 
+		print_r ($stmt);
 
 
 
