@@ -59,6 +59,8 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script>
 $(document).ready(function(){
 
+	var flag = true;
+
 	$(".btn-default").click(function(event){
 
 		$(".form-group").removeClass("has-error");
@@ -69,7 +71,7 @@ $(document).ready(function(){
 		var postcode = $("#postcode").val();
 		var cname_init_py = $("#cname_init_py").val();
 
-		var flag = true;
+
 
 		if (cname == "")
 		{
