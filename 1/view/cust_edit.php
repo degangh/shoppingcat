@@ -18,21 +18,21 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	<form role="form" id='cust_form'>
 	  <div class="form-group">
 	    <label for="cname">Name:</label>
-	    <input type="text" class="form-control" id="cname">
+	    <input type="text" class="form-control required-field" id="cname">
 	  </div>
 	  <div class="form-group">
 	    <label for="cname_init_py">Name Initial Pinyin:</label>
-	    <input type="text" class="form-control" id="cname_init_py">
+	    <input type="text" class="form-control required-field" id="cname_init_py">
 	  </div>
 
 
 	  <div class="form-group">
 	    <label for="mobile">Mobile:</label>
-	    <input type="text" class="form-control" id="mobile">
+	    <input type="text" class="form-control required-field" id="mobile">
 	  </div>
 	  <div class="form-group">
 	    <label for="address">Address:</label>
-	    <input type="text" class="form-control" id="address">
+	    <input type="text" class="form-control required-field" id="address">
 	  </div>
 	  <div class="form-group">
 	    <label for="postcode">Postcode:</label>
@@ -66,7 +66,7 @@ $(document).ready(function(){
 		var cname = $("#cname").val();
 		var mobile = $("#mobile").val();
 		var address = $("#address").val();
-		var postcode = $("#postcode").val();
+		//var postcode = $("#postcode").val();
 		var cname_init_py = $("#cname_init_py").val();
 
 
@@ -94,12 +94,12 @@ $(document).ready(function(){
 			$("#cname_init_py").closest(".form-group").addClass("has-error");
 			flag = false;
 		}
-
+		/*
 		if (postcode == "")
 		{
 			$("#postcode").closest(".form-group").addClass("has-error");
 			flag = false;
-		}
+		}*/
 
 
 
@@ -114,7 +114,7 @@ $(document).ready(function(){
 
 	});
 
-	$("input").focusout(function(){
+	$("input.required-field").focusout(function(){
 		var flag = true;
 		if ($(this).val() == "")
 		{
