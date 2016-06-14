@@ -35,16 +35,16 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	    <label for="mobile">Mobile 手机号码:</label>
 	    <input type="text" class="form-control required-field" id="mobile">
 	  </div>
-	  <div class="form-group">
+	  <div class="form-group  col-md-12">
 	    <label for="address">Address 地址:</label>
 	    <input type="text" class="form-control required-field" id="address">
 	  </div>
-	  <div class="form-group">
+	  <div class="form-group  col-md-12">
 	    <label for="postcode">Postcode 邮编:</label>
 	    <input type="text" class="form-control" id="postcode">
 	  </div>
 
-	  <div class="form-group">
+	  <div class="form-group  col-md-12">
   		<label for="comment">Comment:</label>
   		<textarea class="form-control" rows="3" id="comment"></textarea>
 	  </div>
