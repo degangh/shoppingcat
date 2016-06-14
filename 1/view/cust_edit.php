@@ -101,22 +101,22 @@ $(document).ready(function(){
 			flag = false;
 		}
 
-		$("input").focusout(function(){
-			alert ($(this).val());
-			if ($(this).val() == "")
-			{
-				$(this).closest(".form-group").addClass("has-error");
-			}
-			else {
-				$(this).closest(".form-group").removeClass("has-error");
-			}
-		});
+
 
 		event.preventDefault();
 
 	});
 
-
+	$("input").focusout(function(){
+		alert ($(this).val());
+		if ($(this).val() == "")
+		{
+			$(this).closest(".form-group").addClass("has-error");
+		}
+		else {
+			$(this).closest(".form-group").removeClass("has-error");
+		}
+	});
 
 
 
