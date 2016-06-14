@@ -124,7 +124,10 @@ $(document).ready(function(){
 			url: "../agent/cust.edit.agent.php",
 			data: query_str,
 			success: function(data){
-				alert(data.response_code);
+				if (data.response_code == 200)
+				{
+					alert ("用户添加成功");
+				}
 			}
 		});
 
