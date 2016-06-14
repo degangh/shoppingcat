@@ -59,12 +59,12 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script>
 $(document).ready(function(){
 
-	var flag = true;
+
 
 	$(".btn-default").click(function(event){
 
 		$(".form-group").removeClass("has-error");
-
+		var flag = true;
 		var cname = $("#cname").val();
 		var mobile = $("#mobile").val();
 		var address = $("#address").val();
@@ -112,6 +112,7 @@ $(document).ready(function(){
 	});
 
 	$("input").focusout(function(){
+		var flag = true;
 		if ($(this).val() == "")
 		{
 			$(this).closest(".form-group").addClass("has-error");
