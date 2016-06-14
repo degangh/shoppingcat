@@ -101,9 +101,21 @@ $(document).ready(function(){
 			flag = false;
 		}
 
+		$("input").focusout(function(){
+			if ($(this).val() == "")
+			{
+				$(this).closest(".form-group").addClass("has-error");
+			}
+			else {
+				$(this).closest(".form-group").removeClass("has-error");
+			}
+		});
+
 		event.preventDefault();
 
 	});
+
+
 
 
 
