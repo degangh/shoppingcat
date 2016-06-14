@@ -55,7 +55,23 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	</form>
 
 <div>
-
+	<div id="alertModal" class="modal fade">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button class="close" data-dismiss="modal">&times;</button>
+	                <h4 class="modal-title">Errors Found!</h4>
+	            </div>
+	            <div class="modal-body">
+	                <p></p>
+	            </div>
+	            <div class="modal-footer">
+	                <button class="btn btn-default" data-dismiss="modal">
+	                    Close</button>
+	            </div>
+	        </div><!-- /.modal-content -->
+	    </div><!-- /.modal-dialog -->
+	</div>
 </div>
 </div>
 <script src="../static/jquery-2.2.4.min.js"></script>
