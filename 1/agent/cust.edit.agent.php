@@ -10,7 +10,7 @@ if($_POST)
 	if ($_SESSION['username'])
 	{
 		$customer = new Customer;
-		$r = $customer->list_customer($cid,$_POST);
+		$r = $customer->update_customer_by_id($cid,$_POST);
 
 		//echo json_encode(array("response_code"=>200,"dataset"=>$r));
 
