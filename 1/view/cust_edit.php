@@ -74,7 +74,7 @@ $(document).ready(function(){
 		if (cname == "")
 		{
 			$("#cname").closest(".form-group").addClass("has-error");
-			$("#cname").closest("label").css("color","#FF0000");
+			$("#cname").closest("label").css("font-color","#FF0000");
 			flag = false;
 		}
 
