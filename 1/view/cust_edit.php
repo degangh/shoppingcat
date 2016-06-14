@@ -121,10 +121,10 @@ $(document).ready(function(){
 			$(this).closest(".form-group").removeClass("has-error");
 		}
 
-		console.log(flag);
+		//console.log(flag);
 	});
 
-	
+
 
 
 
