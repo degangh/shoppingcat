@@ -126,7 +126,7 @@ $(document).ready(function(){
 			}
 		});*/
 
-			console.log($("#cust_form").serialize());
+			console.log($("form").serialize());
 			console.log("oops");
 		}
 
