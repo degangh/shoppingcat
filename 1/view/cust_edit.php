@@ -151,6 +151,11 @@ $(document).ready(function(){
 
 			//console.log(query_str + "oops");
 		}
+		else {
+			var message = "Information Missing 红色框为必填部分";
+    		$('#alertModal').find('.modal-body p').text(message);
+    		$('#alertModal').modal('show')
+		}
 
 	});
 
