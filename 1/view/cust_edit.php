@@ -102,6 +102,7 @@ $(document).ready(function(){
 		}
 
 		$("input").focusout(function(){
+			alert ($(this).val());
 			if ($(this).val() == "")
 			{
 				$(this).closest(".form-group").addClass("has-error");
