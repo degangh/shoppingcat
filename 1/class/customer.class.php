@@ -53,9 +53,17 @@ class Customer
 
 		$stmt->execute();
 
-		print_r($stmt->errorInfo());
+		$res = $stmt->errorInfo();
 
-		print_r ($stmt);
+		if ($res[0]="00000")
+		{
+			return TRUE;
+		}
+		else {
+			return FALSE;
+		}
+
+
 
 
 
