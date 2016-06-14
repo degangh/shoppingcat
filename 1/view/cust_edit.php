@@ -25,7 +25,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	    <input type="text" class="form-control required-field" id="cname_init_py">
 	  </div>
 
-	  <div class="form-group">
+	  <div class="form-group col-md-12">
 	    <label for="cname_init_py">ID Number 身份证号码:</label>
 	    <input type="text" class="form-control" id="id_num">
 	  </div>
