@@ -31,7 +31,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	  </div>
 
 
-	  <div class="form-group">
+	  <div class="form-group col-md-12">
 	    <label for="mobile">Mobile 手机号码:</label>
 	    <input type="text" class="form-control required-field" id="mobile">
 	  </div>
