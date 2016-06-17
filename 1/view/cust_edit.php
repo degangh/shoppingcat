@@ -50,7 +50,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	  </div>
 	  <input type="hidden" id="cid" >
 	  <div class = "col-md-12">
-	  <button type="submit" class="btn btn-default">Save 保存</button>
+	  <button type="submit" class="btn btn-default">Save 保存</button> <span id="loading_placeholder"></span>
   	</div>
 	</form>
 
@@ -137,14 +137,16 @@ $(document).ready(function(){
 		{
 
 			//alert ("will submit");
+
+			var img = "<img src = '../static/loading.gif'>";
+
+			$("#loading_placeholder").append(img);
+
 			var query_str = "cid=" + cid + "&cname=" + cname + "&cname_init_py=" + cname_init_py + "&id_num=" + id_num + "&mobile=" + mobile + "&address=" + address + "&postcode=" + postcode + "&comment=" + comment;
 			$.ajax({type:"POST",
 			url: "../agent/cust.edit.agent.php",
 			data: query_str,
-			beforesend: function(){
-				alert ("sending...");
-				console.log("sending");
-			},
+
 			success: function(data){
 				if (data.response_code == 200)
 				{
