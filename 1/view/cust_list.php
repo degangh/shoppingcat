@@ -120,7 +120,7 @@ function processModal()
 function openMondal(event)
 {
 	//alert ("open");
-	$(".modal-body").css("height: 400");
+	$(".modal-body").css("overflow-y: auto");
 
 	$(event.data.id).find('.modal-title').text(event.data.title);
 	$(event.data.id).modal('show');
