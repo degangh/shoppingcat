@@ -119,8 +119,8 @@ function processSchData()
 					$("#sch_table").append(txt).removeClass("hidden");
 				}
 
-				$("td a").on("click", function(){
-					alert ($(this).data('cid'));
+				$("td a").on("click",{cid:$(this).data('cid')} function(){
+					alert (event.data.cid);
 					//alert("oops");
 					event.preventDefault();
 				});
