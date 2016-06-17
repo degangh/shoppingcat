@@ -62,6 +62,8 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 $(document).ready(function(){
 	//preload form html
 	$(".modal-body").load("../static/html/customer_form.html");
+	//preload js
+	$.getScript("../static/js/edit_customer.js");
 	processModal();
 	processSchData();
 	$("#btn_search").on("click",processSchData);
