@@ -119,7 +119,12 @@ function processSchData()
 					$("#sch_table").append(txt).removeClass("hidden");
 				}
 
-				$(".xx1").on("click",{cid: $(this).data('cid'), id: "#genericModal", title: "Edit Customer"}, openModal);
+				//$(".xx1").on("click",{cid: $(this).data('cid'), id: "#genericModal", title: "Edit Customer"}, openModal);
+
+				$(".xx1").click(function(){
+					alert ($(this).data('cid'));
+
+				});
 			}
 			});
 
