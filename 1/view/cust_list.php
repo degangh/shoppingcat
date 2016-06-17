@@ -77,7 +77,7 @@ $(document).ready(function(){
 	});
 
 	$('.modal').on('hidden.bs.modal', function(){
-    alert("hide");
+    	$(this).find("form").find("input, textarea").val("");
 });
 });
 
