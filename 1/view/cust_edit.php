@@ -73,6 +73,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	    </div><!-- /.modal-dialog -->
 	</div>
 </div>
+
 </div>
 <script src="../static/jquery-2.2.4.min.js"></script>
 <script src="../static/bs/js/bootstrap.js"></script>
@@ -140,6 +141,7 @@ $(document).ready(function(){
 			$.ajax({type:"POST",
 			url: "../agent/cust.edit.agent.php",
 			data: query_str,
+			beforesend: alert("sending..."),
 			success: function(data){
 				if (data.response_code == 200)
 				{
