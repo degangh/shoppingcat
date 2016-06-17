@@ -66,7 +66,12 @@ $(document).ready(function(){
 	$.getScript("../static/js/edit_customer.js");
 	processModal();
 	processSchData();
+
 	$("#btn_search").on("click",processSchData);
+
+	$("data_row a").on("click", function(){
+		alert ($(this).data('cid'));
+	});
 
 	$(document).keypress(function(e) {
 	    if(e.which == 13) {
