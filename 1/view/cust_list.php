@@ -114,7 +114,7 @@ function processSchData()
 
 function processModal()
 {
-	$("#mondalopener").on("click",{id: "#alertModal", title: "Add Customer"}, openMondal);
+	$("#mondalopener").on("click",{id: "#alertModal", title: "Add Customer", url: "../static/html/customer_form.html"}, openMondal);
 }
 
 function openMondal(event)
@@ -122,6 +122,7 @@ function openMondal(event)
 	//alert ("open");
 	$(event.data.id).find('.modal-title').text(event.data.title);
 	$(event.data.id).modal('show');
+	$(event.data.id).load(event.data.url);
 	event.preventDefault();
 }
 </script>
