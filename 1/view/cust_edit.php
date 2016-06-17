@@ -151,6 +151,7 @@ $(document).ready(function(){
 				if (data.response_code == 200)
 				{
 					alert ("用户保存成功");
+					$("#loading_placeholder").addClass("hidden");
 					window.location.replace("cust_list.php");
 				}
 			}
