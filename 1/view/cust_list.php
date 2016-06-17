@@ -122,7 +122,7 @@ function openMondal(event)
 	//alert ("open");
 	$(event.data.id).find('.modal-title').text(event.data.title);
 	$(event.data.id).modal('show');
-	$(event.data.id).load(event.data.url);
+	$(".modal-body").load(event.data.url);
 	event.preventDefault();
 }
 </script>
