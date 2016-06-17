@@ -70,7 +70,9 @@ $("#save_customer").click(function(event){
 				$("#loading_placeholder").addClass("hidden");
 				//window.location.replace("cust_list.php");
 				$("#genericModal").modal('hide');
-				processSchData();		
+				//clear input
+				$("#genericModal").find("input").val("");
+				processSchData();
 			}
 		}
 	});
