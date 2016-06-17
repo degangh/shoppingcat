@@ -106,7 +106,7 @@ function processSchData()
 				{
 					for (var i=0; i<len; i++)
 					{
-						txt += "<tr class='data_row'><td><a href='' class='xx1' data-cid ='" + data[i].cid +"'>"+data[i].cname + "</a></td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
+						txt += "<tr class='data_row'><td><a href='' class='xx1' id ='" + data[i].cid +"'>"+data[i].cname + "</a></td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
 					}
 
 				}
@@ -119,7 +119,7 @@ function processSchData()
 					$("#sch_table").append(txt).removeClass("hidden");
 				}
 
-				$(".xx1").on("click",{cid: 93, id: "#genericModal", title: "Edit Customer"}, openModal);
+				$(".xx1").on("click",{cid: $(this).attr("id"), id: "#genericModal", title: "Edit Customer"}, openModal);
 			}
 			});
 
