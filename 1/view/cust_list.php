@@ -114,13 +114,13 @@ function processSchData()
 
 function processModal()
 {
-	$("#mondalopener").on("click", openMondal);
+	$("#mondalopener").on("click",{id: "#alertModal"}, openMondal);
 }
 
-function openMondal()
+function openMondal(event)
 {
 	//alert ("open");
-	$('#alertModal').modal('show')
+	$(event.data.id).modal('show')
 	event.preventDefault();
 }
 </script>
