@@ -69,7 +69,7 @@ $("#save_customer").click(function(event){
 				alert ("用户保存成功");
 				$("#loading_placeholder").addClass("hidden");
 				//window.location.replace("cust_list.php");
-				
+
 			}
 		}
 	});
@@ -77,9 +77,10 @@ $("#save_customer").click(function(event){
 		//console.log(query_str + "oops");
 	}
 	else {
-		var message = "Information Missing 红色框为必填部分";
-		$('#alertModal').find('.modal-body p').text(message);
-		$('#alertModal').modal('show')
+		//var message = "Information Missing 红色框为必填部分";
+		//$('#alertModal').find('.modal-body p').text(message);
+		//$('#alertModal').modal('show');
+		alert ("Information Missing");
 	}
 
 });
