@@ -138,9 +138,9 @@ $(document).ready(function(){
 
 			//alert ("will submit");
 
-			var img = "";
 
-			$("#loading_placeholder").append(img);
+
+			$("#loading_placeholder").removeClass("hidden");
 
 			var query_str = "cid=" + cid + "&cname=" + cname + "&cname_init_py=" + cname_init_py + "&id_num=" + id_num + "&mobile=" + mobile + "&address=" + address + "&postcode=" + postcode + "&comment=" + comment;
 			$.ajax({type:"POST",
