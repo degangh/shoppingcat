@@ -1,4 +1,4 @@
-$(".btn-default").click(function(event){
+$("#save_customer").click(function(event){
 
 	$(".form-group").removeClass("has-error");
 	var flag = true;
