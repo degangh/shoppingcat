@@ -119,7 +119,7 @@ function processSchData()
 					$("#sch_table").append(txt).removeClass("hidden");
 				}
 
-				$("td a").on("click",{cid: $(this).data('cid'), id: "#genericModal"}, openMOndal);
+				$("td a").on("click",{cid: $(this).data('cid'), id: "#genericModal"}, openModal);
 			}
 			});
 
@@ -129,10 +129,10 @@ function processSchData()
 
 function processModal()
 {
-	$("#mondalopener").on("click",{id: "#genericModal", title: "Add Customer"}, openMondal);
+	$("#mondalopener").on("click",{id: "#genericModal", title: "Add Customer"}, openModal);
 }
 
-function openMondal(event)
+function openModal(event)
 {
 	//alert ("open");
 	$(event.data.id).find(".modal-body").css("overflow-y","auto");
