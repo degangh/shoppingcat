@@ -136,12 +136,12 @@ $(document).ready(function(){
 		if (flag == true)
 		{
 
-			alert ("will submit");
+			//alert ("will submit");
 			var query_str = "cid=" + cid + "&cname=" + cname + "&cname_init_py=" + cname_init_py + "&id_num=" + id_num + "&mobile=" + mobile + "&address=" + address + "&postcode=" + postcode + "&comment=" + comment;
 			$.ajax({type:"POST",
 			url: "../agent/cust.edit.agent.php",
 			data: query_str,
-			beforesend: function(){alert ("sending...")},
+			beforesend: function(){alert ("sending...");},
 			success: function(data){
 				if (data.response_code == 200)
 				{
