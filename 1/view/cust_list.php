@@ -60,6 +60,8 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script src="../static/bs/js/bootstrap.js"></script>
 <script>
 $(document).ready(function(){
+	//preload form html
+	$(".modal-body").load("..static/html/customer_form.html");
 	processModal();
 	processSchData();
 	$("#btn_search").on("click",processSchData);
@@ -75,6 +77,7 @@ $(document).ready(function(){
 
 function processSchData()
 {
+
 
 
 			//alert("clicked");
@@ -124,7 +127,7 @@ function openMondal(event)
 
 	$(event.data.id).find('.modal-title').text(event.data.title);
 	$(event.data.id).modal('show');
-	$(".modal-body").load(event.data.url);
+
 	event.preventDefault();
 }
 </script>
