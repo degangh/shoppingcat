@@ -71,7 +71,7 @@ $("#save_customer").click(function(event){
 				//window.location.replace("cust_list.php");
 				$("#genericModal").modal('hide');
 				//clear input
-				$("#genericModal").find("input").val("");
+				$("#genericModal").find("input textarea").val("");
 				processSchData();
 			}
 		}
