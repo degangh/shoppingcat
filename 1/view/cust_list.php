@@ -77,7 +77,7 @@ $(document).ready(function(){
 	});
 
 	$('.modal').on('hidden.bs.modal', function(){
-    $(this).find('#cust_form').reset();
+    alert("hide");
 });
 });
 
