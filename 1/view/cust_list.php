@@ -120,6 +120,7 @@ function processModal()
 function openMondal(event)
 {
 	//alert ("open");
+	modal = $(event.data.id);
 	header = $(".modal-header", modal)
   	body = $(".modal-body", modal)
 
