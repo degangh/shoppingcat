@@ -69,7 +69,7 @@ $(document).ready(function(){
 
 	$("#btn_search").on("click",processSchData);
 
-	$(".data_row").on("click", function(){
+	$(".default_name").on("click", function(){
 		//alert ($(this).data('cid'));
 		alert("oops");
 	});
@@ -109,7 +109,7 @@ function processSchData()
 				{
 					for (var i=0; i<len; i++)
 					{
-						txt += "<tr class='data_row'><td><a href='' data-cid ='" + data[i].cid +"'>"+data[i].cname + "</a></td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
+						txt += "<tr class='data_row'><td><a href='' class='default_name' data-cid ='" + data[i].cid +"'>"+data[i].cname + "</a></td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
 					}
 
 				}
