@@ -22,7 +22,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 			<button type="button" class='btn btn-default' id="btn_search">Search</button>
 		</div>
 	</form>
-<div><a href="cust_edit.php">Add Customer 添加新顾客</a></div>
+<div><a href="cust_edit.php">Add Customer 添加新顾客</a> | <a href="" id="mondalopener">Add Customer (Beta)</a></div>
 <div>
 	<table id="sch_table" class="hidden table table-striped">
 	    <tr>
@@ -33,6 +33,27 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	    </tr>
 	</table>
 </div>
+
+<div>
+	<div id="alertModal" class="modal fade">
+	    <div class="modal-dialog">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <button class="close" data-dismiss="modal">&times;</button>
+	                <h4 class="modal-title">Error 提交错误</h4>
+	            </div>
+	            <div class="modal-body">
+	                <p></p>
+	            </div>
+	            <div class="modal-footer">
+	                <button class="btn btn-default" data-dismiss="modal">
+	                    Close</button>
+	            </div>
+	        </div><!-- /.modal-content -->
+	    </div><!-- /.modal-dialog -->
+	</div>
+</div>
+
 </div>
 
 <script src="../static/jquery-2.2.4.min.js"></script>
@@ -88,6 +109,17 @@ function processSchData()
 			}
 			});
 
+}
+
+function processModal()
+{
+	$("#mondalopener").on("click", openMondal);
+}
+
+function openMondal()
+{
+	alert ("open");
+	event.preventDefault();
 }
 </script>
 </body>
