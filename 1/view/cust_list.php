@@ -106,7 +106,7 @@ function processSchData()
 				{
 					for (var i=0; i<len; i++)
 					{
-						txt += "<tr class='data_row'><td><a href='' class='default_name' data-cid ='" + data[i].cid +"'>"+data[i].cname + "</a></td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
+						txt += "<tr class='data_row'><td><a href=''  data-cid ='" + data[i].cid +"'>"+data[i].cname + "</a></td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
 					}
 
 				}
@@ -119,16 +119,13 @@ function processSchData()
 					$("#sch_table").append(txt).removeClass("hidden");
 				}
 
-				$("td a").on("click",{cid: $(this).data('cid')}, function(event){
-					alert (event.data.cid);
-					//alert("oops");
-					event.preventDefault();
-				});
-
+				$("td a").on("click",{cid: $(this).data('cid'), id: "#genericModal"}, openMOndal);
 			}
 			});
 
 }
+
+
 
 function processModal()
 {
