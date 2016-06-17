@@ -35,7 +35,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 </div>
 
 <div>
-	<div id="alertModal" class="modal fade">
+	<div id="genericModal" class="modal fade">
 	    <div class="modal-dialog">
 	        <div class="modal-content">
 	            <div class="modal-header">
@@ -119,7 +119,7 @@ function processSchData()
 
 function processModal()
 {
-	$("#mondalopener").on("click",{id: "#alertModal", title: "Add Customer", url: "../static/html/customer_form.html"}, openMondal);
+	$("#mondalopener").on("click",{id: "#genericModal", title: "Add Customer"}, openMondal);
 }
 
 function openMondal(event)
