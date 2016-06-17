@@ -50,7 +50,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	  </div>
 	  <input type="hidden" id="cid" >
 	  <div class = "col-md-12">
-	  <button type="submit" class="btn btn-default">Save 保存</button> <span id="loading_placeholder"></span>
+	  <button type="submit" class="btn btn-default">Save 保存</button> <span id="loading_placeholder" class="hidden"><img src = '../static/img/loading.gif' width="45" height="45" ></span>
   	</div>
 	</form>
 
@@ -138,7 +138,7 @@ $(document).ready(function(){
 
 			//alert ("will submit");
 
-			var img = "<img src = '../static/img/loading.gif'>";
+			var img = "";
 
 			$("#loading_placeholder").append(img);
 
