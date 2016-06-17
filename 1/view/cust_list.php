@@ -69,7 +69,7 @@ $(document).ready(function(){
 
 	$("#btn_search").on("click",processSchData);
 
-	$(".default_name").on("click", function(){
+	$("td a").on("click", function(){
 		//alert ($(this).data('cid'));
 		alert("oops");
 	});
