@@ -138,7 +138,7 @@ $(document).ready(function(){
 
 			//alert ("will submit");
 
-			var img = "<img src = '../static/loading.gif'>";
+			var img = "<img src = '../static/img/loading.gif'>";
 
 			$("#loading_placeholder").append(img);
 
