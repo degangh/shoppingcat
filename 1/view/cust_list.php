@@ -69,10 +69,7 @@ $(document).ready(function(){
 
 	$("#btn_search").on("click",processSchData);
 
-	$("td a").on("click", function(){
-		//alert ($(this).data('cid'));
-		alert("oops");
-	});
+
 
 	$(document).keypress(function(e) {
 	    if(e.which == 13) {
@@ -121,6 +118,11 @@ function processSchData()
 				{
 					$("#sch_table").append(txt).removeClass("hidden");
 				}
+
+				$("td a").on("click", function(){
+					//alert ($(this).data('cid'));
+					alert("oops");
+				});
 
 			}
 			});
