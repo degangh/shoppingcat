@@ -70,8 +70,6 @@ $("#save_customer").click(function(event){
 				$("#loading_placeholder").addClass("hidden");
 				//window.location.replace("cust_list.php");
 				$("#genericModal").modal('hide');
-				//clear input
-				$("#genericModal").find("input, textarea").val("");
 				processSchData();
 			}
 		}
