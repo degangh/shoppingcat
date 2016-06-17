@@ -120,8 +120,9 @@ function processSchData()
 				}
 
 				$("td a").on("click", function(){
-					//alert ($(this).data('cid'));
-					alert("oops");
+					alert ($(this).data('cid'));
+					//alert("oops");
+					event.preventDefault();
 				});
 
 			}
