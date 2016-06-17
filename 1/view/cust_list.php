@@ -120,17 +120,7 @@ function processModal()
 function openMondal(event)
 {
 	//alert ("open");
-	modal = $(event.data.id);
-	header = $(".modal-header", modal)
-  	body = $(".modal-body", modal)
-
-  	modalheight = parseInt(modal.css("height"))
-  	headerheight = parseInt(header.css("height")) + parseInt(header.css("padding-top")) + parseInt(header.css("padding-bottom"))
-  	bodypaddings = parseInt(body.css("padding-top")) + parseInt(body.css("padding-bottom"))
-
-  	height = modalheight - headerheight - bodypaddings - 5 //fudge factor
-
-  	body.css("max-height", "#{height}px")
+	$(".modal-body").css("height: 400");
 
 	$(event.data.id).find('.modal-title').text(event.data.title);
 	$(event.data.id).modal('show');
