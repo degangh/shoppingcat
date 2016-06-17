@@ -69,7 +69,7 @@ $("#save_customer").click(function(event){
 				alert ("用户保存成功");
 				$("#loading_placeholder").addClass("hidden");
 				//window.location.replace("cust_list.php");
-
+				$("#genericModal").modal('hide');		
 			}
 		}
 	});
