@@ -119,7 +119,8 @@ function processModal()
 
 function openMondal()
 {
-	alert ("open");
+	//alert ("open");
+	$('#alertModal').modal('show')
 	event.preventDefault();
 }
 </script>
