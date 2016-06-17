@@ -119,7 +119,7 @@ function processSchData()
 					$("#sch_table").append(txt).removeClass("hidden");
 				}
 
-				$("td a").on("click",{cid: $(this).data('cid'), id: "#genericModal"}, openModal);
+				$("td a").on("click",{cid: $(this).data('cid'), id: "#genericModal", title: "Edit Customer"}, openModal);
 			}
 			});
 
@@ -135,6 +135,7 @@ function processModal()
 function openModal(event)
 {
 	//alert ("open");
+	alert (event.data.cid);
 	$(event.data.id).find(".modal-body").css("overflow-y","auto");
 
 	$(event.data.id).find('.modal-title').text(event.data.title);
