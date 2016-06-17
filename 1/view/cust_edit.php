@@ -141,7 +141,7 @@ $(document).ready(function(){
 			$.ajax({type:"POST",
 			url: "../agent/cust.edit.agent.php",
 			data: query_str,
-			beforesend: alert("sending..."),
+			beforesend: function(){alert ("sending...")},
 			success: function(data){
 				if (data.response_code == 200)
 				{
