@@ -60,6 +60,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <script src="../static/bs/js/bootstrap.js"></script>
 <script>
 $(document).ready(function(){
+	processModal();
 	processSchData();
 	$("#btn_search").on("click",processSchData);
 
