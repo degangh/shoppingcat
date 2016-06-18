@@ -140,7 +140,7 @@ function processModal()
 function openModal(event)
 {
 	//alert ("open");
-	alert (event.data.cid);
+	//alert (event.data.cid);
 	$(event.data.id).find(".modal-body").css("overflow-y","auto");
 
 	$(event.data.id).find('.modal-title').text(event.data.title);
