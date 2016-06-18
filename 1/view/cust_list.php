@@ -137,6 +137,7 @@ function processSchData()
 						$("#address").val(data[0].address);
 						$("#postcode").val(data[0].postcode);
 						$("#comment").val(data[0].comment);
+						$("#cid").val(data[0].cid);
 
 						openModal(event);
 
