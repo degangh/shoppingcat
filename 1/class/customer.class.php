@@ -46,13 +46,13 @@ class Customer
 		$stmt->bindParam(":postcode",$post['postcode'],PDO::PARAM_STR);
 		$stmt->bindParam(":id_num",$post['id_num'],PDO::PARAM_STR);
 		$stmt->bindParam(":comment",$post['comment'],PDO::PARAM_STR);
-		$stmt->bindParam(":cid", $cid, PDO::PARAM_INT);
-		/*
+
+
 		if ($where_class != "")
 		{
-			$stmt->bindParam(":cid", $cid, PARAM_INT);
+			$stmt->bindParam(":cid", $cid, PDO::PARAM_INT);
 		}
-		*/
+		
 
 		$stmt->execute();
 
