@@ -129,7 +129,7 @@ function processSchData()
 					data: "cid="+ $(this).data('cid'),
 					success: function(data){
 
-						alert (data.[0].cname);
+						alert (data[0].cname);
 					}
 
 					});
