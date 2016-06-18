@@ -131,6 +131,12 @@ function processSchData()
 
 						//var cname = data[0].cname;
 						$("#cname").val(data[0].cname);
+						$("#cname_init_py").val(data[0].cname_init_py);
+						$("#id_num").val(data[0].id_num);
+						$("#mobile").val(data[0].mobile);
+						$("#address").val(data[0].address);
+						$("#postcode").val(data[0].postcode);
+						$("#comment").val(data[0].comment);
 
 						openModal(event);
 
