@@ -37,7 +37,7 @@ class Customer
 
 		$stmt = $db->pdo->prepare($q);
 
-		print_r ($stmt);
+		//print_r ($stmt);
 
 		$stmt->bindValue(":cname",$post['cname'],PDO::PARAM_STR);
 		$stmt->bindParam(":cname_init_py",$post['cname_init_py'],PDO::PARAM_STR);
@@ -50,7 +50,7 @@ class Customer
 
 		if ($where_clause != "")
 		{
-			echo $cid."<b>here</b>";
+			//echo $cid."<b>here</b>";
 			$stmt->bindParam(":cid", $cid, PDO::PARAM_INT);
 		}
 
