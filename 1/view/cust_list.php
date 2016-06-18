@@ -122,14 +122,15 @@ function processSchData()
 				//$(".xx1").on("click",{cid: $(this).data('cid'), id: "#genericModal", title: "Edit Customer"}, openModal);
 
 				$(".xx1").on("click",function(){
-					alert ($(this).data('cid'));
+					//alert ($(this).data('cid'));
 
 					$.ajax({type:"POST",
 					url: "../agent/cust.info.agent.php",
 					data: "cid="+ $(this).data('cid'),
 					success: function(data){
 
-						alert (data[0].cname);
+						console.log(data[0].cname);
+						$("#cname").val(data[0].cname);
 					}
 
 					});
