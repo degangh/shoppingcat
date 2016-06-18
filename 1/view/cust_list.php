@@ -121,8 +121,9 @@ function processSchData()
 
 				//$(".xx1").on("click",{cid: $(this).data('cid'), id: "#genericModal", title: "Edit Customer"}, openModal);
 
-				$(".xx1").click(function(){
+				$(".xx1").on("click",function(){
 					alert ($(this).data('cid'));
+
 
 				});
 			}
