@@ -22,7 +22,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 			<button type="button" class='btn btn-default' id="btn_search">Search</button>
 		</div>
 	</form>
-<div><a href="cust_edit.php">Add Customer 添加新顾客</a> | <a href="" id="mondalopener">Add Customer (Beta)</a></div>
+<div><a href="" id="mondalopener">Add Customer 添加新顾客</a></div>
 <div>
 	<table id="sch_table" class="hidden table table-striped">
 	    <tr>
