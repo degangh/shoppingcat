@@ -50,7 +50,7 @@ class Customer
 
 		if ($where_class != "")
 		{
-			echo $cid;
+			echo $cid."<b>here</b>";
 			$stmt->bindParam(":cid", $cid, PDO::PARAM_INT);
 		}
 
