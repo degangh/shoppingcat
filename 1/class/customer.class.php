@@ -48,7 +48,7 @@ class Customer
 		$stmt->bindParam(":comment",$post['comment'],PDO::PARAM_STR);
 
 
-		if ($where_class != "")
+		if ($where_clause != "")
 		{
 			echo $cid."<b>here</b>";
 			$stmt->bindParam(":cid", $cid, PDO::PARAM_INT);
