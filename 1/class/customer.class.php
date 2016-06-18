@@ -18,10 +18,11 @@ class Customer
 
 	public function update_customer_by_id($cid,$post)
 	{
+
 		if ($cid!="")
 		{
 			$op = "update customer set ";
-			$where_clause = "where cid = :cid";
+			$where_clause = " where cid = :cid";
 		}
 
 		else {
@@ -35,6 +36,8 @@ class Customer
 		$db = dbConn::dbInit();
 
 		$stmt = $db->pdo->prepare($q);
+
+		print_r ($stmt);
 
 		$stmt->bindValue(":cname",$post['cname'],PDO::PARAM_STR);
 		$stmt->bindParam(":cname_init_py",$post['cname_init_py'],PDO::PARAM_STR);
