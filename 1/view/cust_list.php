@@ -129,8 +129,8 @@ function processSchData()
 					data: "cid="+ $(this).data('cid'),
 					success: function(data){
 
-						//var cname = data[0].cname;
-						$("#cname").val("xxx");
+						var cname = data[0].cname;
+						$("#cname").val(cname);
 
 						openModal(event);
 
