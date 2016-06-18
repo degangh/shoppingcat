@@ -121,7 +121,7 @@ function processSchData()
 
 				//$(".xx1").on("click",{cid: $(this).data('cid'), id: "#genericModal", title: "Edit Customer"}, openModal);
 
-				$(".xx1").on("click",function(){
+				$(".xx1").on("click",{title: "Edit Customer", id: "#genericModal"}, function(){
 					//alert ($(this).data('cid'));
 
 					$.ajax({type:"POST",
@@ -132,7 +132,7 @@ function processSchData()
 						//var cname = data[0].cname;
 						$("#cname").val("xxx");
 
-						openModal();
+						openModal(event);
 					}
 
 					});
