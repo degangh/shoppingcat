@@ -131,6 +131,8 @@ function processSchData()
 
 						console.log(data[0].cname);
 						$("#cname").val(data[0].cname);
+
+						openModal();
 					}
 
 					});
