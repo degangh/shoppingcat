@@ -18,7 +18,7 @@ class Customer
 
 	public function update_customer_by_id($cid,$post)
 	{
-		if (isset($cid))
+		if ($cid!="")
 		{
 			$op = "update customer set ";
 			$where_clause = "where cid = :cid";
