@@ -132,7 +132,7 @@ function processSchData()
 						//var cname = data[0].cname;
 						$("#cname").val("xxx");
 
-						openModal(event);
+						$("#genericModal").modal("show");
 					}
 
 					});
