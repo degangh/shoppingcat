@@ -124,6 +124,20 @@ function processSchData()
 				$(".xx1").on("click",function(){
 					alert ($(this).data('cid'));
 
+					$.ajax({type:"POST",
+					url: "../agent/cust.info.agent.php",
+					data: "cid="+ $(this).data('cid'),
+					success: function(data){
+
+						alert (data.[0].cname);
+					}
+
+					});
+
+
+
+
+
 
 				});
 			}
