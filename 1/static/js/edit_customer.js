@@ -59,6 +59,7 @@ $("#save_customer").click(function(event){
 		$("#loading_placeholder").removeClass("hidden");
 
 		var query_str = "cid=" + cid + "&cname=" + cname + "&cname_init_py=" + cname_init_py + "&id_num=" + id_num + "&mobile=" + mobile + "&address=" + address + "&postcode=" + postcode + "&comment=" + comment;
+		alert(query_str);
 		$.ajax({type:"POST",
 		url: "../agent/cust.edit.agent.php",
 		data: query_str,
