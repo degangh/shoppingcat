@@ -143,7 +143,7 @@ function processSchData()
 				$(".xx1").on("click",function(e)
 				{
 					$(this).popover({content:"test"});
-					e.preventDefault
+					e.preventDefault();
 				});
 
 				//$(".xx1").popover({content:"<a href='' data-toggle='modal' class='tbl_link' data-cid='104'>Customer Info</a>",html:true});
