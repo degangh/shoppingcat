@@ -12,7 +12,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	<link href="../static/bs/css/bootstrap.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="padding-top:70px">
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 	<form role="form" class="form-inline" action="">
