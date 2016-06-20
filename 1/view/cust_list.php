@@ -58,7 +58,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	<div id="genericModal" class="modal fade">
 	    <div class="modal-dialog">
 	        <div class="modal-content">
-	            <div class="modal-header" class="height:18px">
+	            <div class="modal-header">
 
 
 					<nav class="navbar navbar-default col-sm-10" style="background-color:#fff;height:30px">
