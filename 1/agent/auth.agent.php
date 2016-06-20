@@ -18,7 +18,7 @@ if ($_POST)
 		//reg session here
 		$_SESSION['username'] = $_POST['username'];
 		//set cookie httponly
-		setcoookie("testcookie",md5("123456"),time()+3600,"/","shoppingcat.applinzi.com",false,true);
+		setcookie("testcookie",md5("123456"),time()+3600,"/","shoppingcat.applinzi.com",false,true);
 	}
 
 	echo $r;
