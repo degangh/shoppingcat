@@ -59,7 +59,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	    <div class="modal-dialog">
 	        <div class="modal-content">
 	            <div class="modal-header" class="height:18px">
-	                <button class="close" data-dismiss="modal">&times;</button>
+
 
 					<nav class="navbar navbar-default col-sm-10">
 				  <div class="container-fluid">
@@ -71,6 +71,12 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 				      <li><a href="#">Page 3</a></li>
 				    </ul>
 				  </div>
+
+				  <ul class="nav navbar-nav navbar-right">
+					  <li>
+						  <button class="close" data-dismiss="modal">&times;</button>
+					  </li>
+				  </ul>
 			  		</nav>
 
 	            </div>
