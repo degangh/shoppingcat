@@ -142,7 +142,7 @@ function processSchData()
 
 
 				$(".xx1").on("click",{title: "Edit Customer", id: "#genericModal"}, function(event){
-					alert ($(this).data('cid'));
+					//alert ($(this).data('cid'));
 
 					$.ajax({type:"POST",
 					url: "../agent/cust.info.agent.php",
