@@ -35,7 +35,7 @@ session_start();
 
   		</div>
 		</form>
-		<div class="alert alert-danger hide offset4">
+		<div class="alert alert-danger hide offset4 col-sm-6">
 		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 		<strong>Error!</strong> Login Failed.
 
