@@ -60,7 +60,19 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	        <div class="modal-content">
 	            <div class="modal-header">
 	                <button class="close" data-dismiss="modal">&times;</button>
-	                <h4 class="modal-nav"> </h4>
+
+					<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+
+				    <ul class="nav navbar-nav">
+				      <li class="active"><a href="#">Home</a></li>
+				      <li><a href="#">Page 1</a></li>
+				      <li><a href="#">Page 2</a></li>
+				      <li><a href="#">Page 3</a></li>
+				    </ul>
+				  </div>
+			  		</nav>
+
 	            </div>
 				<div class="modal-header">
 
