@@ -31,7 +31,7 @@ session_start();
       		<button  type='button' class="btn btn-default" id="login_submit">Submit</button>
 		</div>
 
-		<div class="alert alert-danger hide offset4 col-sm-6">
+		<div class="alert alert-danger hide  col-sm-12">
 		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 		<strong>Error!</strong> Login Failed.
 		</div>
