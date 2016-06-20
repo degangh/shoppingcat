@@ -35,7 +35,7 @@ session_start();
 
   		</div>
 		</form>
-		<div class="alert alert-danger hide col-sm-10">
+		<div class="alert alert-danger hide offset4">
 		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 		<strong>Error!</strong> Login Failed.
 
@@ -61,7 +61,7 @@ $(document).ready(function(){
 				window.location.replace("../index.php")
 			}
 			else {
-				alert ("go die");
+				//alert ("go die");
 				//
 				$(".alert-danger").removeClass("hide");
 			}
