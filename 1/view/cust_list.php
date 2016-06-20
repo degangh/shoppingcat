@@ -61,8 +61,8 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	            <div class="modal-header">
 
 
-  						  <button class="close" data-dismiss="modal" >&times;</button>
-  			
+  						  <button data-dismiss="modal" >&times;</button>
+
 
 	            </div>
 				<div class="modal-header">
