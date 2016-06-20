@@ -20,8 +20,6 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 			<div class="col-lg-6">
 			<div class="input-group">
 			<input type='search' id="keyword" class="form-control" placeholder="Search Key" />
-			<span class="input-group-addon glyphicon glyphicon-remove-circle" style="color:#ccc; padding-top:0;"></span>
-
 			<span class="input-group-btn">
 				<button type="button" class='btn btn-default' id="btn_search">Search</button>
 			</span>
