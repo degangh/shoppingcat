@@ -17,7 +17,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	  <div class="container-fluid">
 		  <div class="row">
 			  <form role="form" class="form-inline" action="">
-				  <div class="row">
+
 
 					  <div class="input-group">
 						  <input type='search' id="keyword" class="form-control" placeholder="Search Key" />
@@ -26,7 +26,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 						  </span>
 					  </div>
 
-				  </div>
+				 
 			  </form>
 	  	</div>
 	  </div>
