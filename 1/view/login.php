@@ -30,6 +30,10 @@ session_start();
     	<div class="col-sm-offset-2 col-sm-10">
       		<button  type='button' class="btn btn-default" id="login_submit">Submit</button>
     	</div>
+			<div class="alert alert-danger hidden">
+	    	<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+	    	<strong>Error!</strong> Login Failed.
+	  		</div>
   		</div>
 		</form>
 
@@ -51,11 +55,12 @@ $(document).ready(function(){
 		success: function (data) {
 			if (data.response_code == 200)
 			{
-				alert ("login done!");
+				//alert ("login done!");
 				window.location.replace("../index.php")
 			}
 			else {
 				alert ("go die");
+				//
 			}
 		}
 
