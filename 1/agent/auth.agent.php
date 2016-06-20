@@ -13,8 +13,10 @@ if ($_POST)
 
 	if ($a["reponse_code"] == 200)
 	{
-		echo $r;
+		//
 	}
+
+	echo $r;
 }
 
 else {
