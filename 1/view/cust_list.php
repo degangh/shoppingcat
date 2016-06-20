@@ -72,12 +72,13 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 				    </ul>
 				  </div>
 
-				  <ul class="nav navbar-nav navbar-right">
-					  <li>
-						  <button class="close" data-dismiss="modal">&times;</button>
-					  </li>
-				  </ul>
+
 			  		</nav>
+					<ul class="nav navbar-nav navbar-right">
+  					  <li>
+  						  <button class="close" data-dismiss="modal" >&times;</button>
+  					  </li>
+  				  </ul>
 
 	            </div>
 				<div class="modal-header">
