@@ -16,7 +16,7 @@ if ($_POST)
 	if ($a->{"response_code"} == 200)
 	{
 		//reg session here
-		$_SESSION['username'] = $username;
+		$_SESSION['username'] = $_POST['username'];
 	}
 
 	echo $r;
