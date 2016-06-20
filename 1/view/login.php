@@ -35,7 +35,7 @@ session_start();
 
   		</div>
 		</form>
-		<div class="alert alert-danger hide">
+		<div class="alert alert-danger hide col-sm-10">
 		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 		<strong>Error!</strong> Login Failed.
 
