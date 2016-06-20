@@ -61,7 +61,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	            <div class="modal-header" class="height:18px">
 
 
-					<nav class="navbar navbar-default col-sm-12" style="background-color:#fff">
+					<nav class="navbar navbar-default col-sm-10" style="background-color:#fff">
 				  <div class="container-fluid">
 
 				    <ul class="nav navbar-nav">
