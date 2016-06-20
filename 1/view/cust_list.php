@@ -15,19 +15,21 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <body style="padding-top:62px">
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
-	<form role="form" class="form-inline" action="">
-		<div class="row">
+		  <div class="row">
+			  <form role="form" class="form-inline" action="">
+				  <div class="row">
 
-			<div class="input-group">
-			<input type='search' id="keyword" class="form-control" placeholder="Search Key" />
-			<span class="input-group-btn">
-				<button type="button" class='btn btn-default' id="btn_search">Search</button>
-			</span>
-			</div>
-		
-		</div>
-	</form>
-</div>
+					  <div class="input-group">
+						  <input type='search' id="keyword" class="form-control" placeholder="Search Key" />
+						  <span class="input-group-btn">
+							  <button type="button" class='btn btn-default' id="btn_search">Search</button>
+						  </span>
+					  </div>
+
+				  </div>
+			  </form>
+	  	</div>
+	  </div>
 </nav>
 
 
