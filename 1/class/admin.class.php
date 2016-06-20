@@ -17,7 +17,7 @@ class adminUser
 		if ($r->rowCount() == 1)
 		{
 			$rt = array("response_code"=>200);
-			$_SESSION['username'] = $username;
+			
 		}
 		else {
 			$rt = array("response_code"=>404);# code...
