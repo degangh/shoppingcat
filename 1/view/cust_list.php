@@ -64,7 +64,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 					<nav class="navbar navbar-default col-sm-10" style="background-color:#fff">
 				  <div class="container-fluid">
 
-				    <ul class="nav navbar-nav">
+				    <ul class="nav navbar-nav" style="padding:0px">
 				      <li class="active"><a href="#">Home</a></li>
 				      <li><a href="#">Page 1</a></li>
 				      <li><a href="#">Page 2</a></li>
