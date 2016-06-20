@@ -141,7 +141,7 @@ function processSchData()
 
 				//$(".xx1").on("click",{cid: $(this).data('cid'), id: "#genericModal", title: "Edit Customer"}, openModal);
 
-				$(".xx1").hover({content:"<a href='' data-toggle='modal' class='tbl_link' data-cid='" + $(this).data('cid') + "'>Customer Info</a>",html:true});
+				$(".xx1").popover({content:"<a href='' data-toggle='modal' class='tbl_link' data-cid='" + $(this).data('cid') + "'>Customer Info</a>",html:true});
 
 				$(".tbl_link").on("click",{title: "Edit Customer", id: "#genericModal"}, function(event){
 					//alert ($(this).data('cid'));
