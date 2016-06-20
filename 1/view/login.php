@@ -33,13 +33,15 @@ session_start();
 		</div>
     	</div>
 
-  		</div>
-		</form>
 		<div class="alert alert-danger hide offset4 col-sm-6">
 		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 		<strong>Error!</strong> Login Failed.
 
-	</div>
+		</div>
+
+  		</div>
+		</form>
+
 </body>
 <script src="../static/jquery-2.2.4.min.js"></script>
 <script src="../static/bs/js/bootstrap.js"></script>
