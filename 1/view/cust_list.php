@@ -15,11 +15,14 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <body>
 <div class='container'>
 	<form role="form" class="form-inline" action="">
-		<div class="form-group">
+		<div class="row">
+			<div class="input-group">
 			<input type='search' id="keyword" class="form-control" placeholder="Search Key" />
-		</div>
-		<div class="form-group">
-			<button type="button" class='btn btn-default' id="btn_search">Search</button>
+
+			<span class="input-group-btn">
+				<button type="button" class='btn btn-default' id="btn_search">Search</button>
+			</span>
+			</div>
 		</div>
 	</form>
 
