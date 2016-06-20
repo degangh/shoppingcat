@@ -13,7 +13,7 @@ if ($_POST)
 
 	print_r($a);
 
-	if ($a->"response_code" == 200)
+	if ($a->{"response_code"} == 200)
 	{
 		//
 	}
