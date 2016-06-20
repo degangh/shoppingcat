@@ -29,15 +29,16 @@ session_start();
   		<div class="form-group">
     	<div class="col-sm-offset-2 col-sm-10">
       		<button  type='button' class="btn btn-default" id="login_submit">Submit</button>
-
 		</div>
-    	</div>
 
 		<div class="alert alert-danger hide offset4 col-sm-6">
 		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
 		<strong>Error!</strong> Login Failed.
-
 		</div>
+
+    	</div>
+
+
 
   		</div>
 		</form>
