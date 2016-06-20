@@ -15,7 +15,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 <body style="padding-top:62px">
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
-		  <div class="row">
+		  <div class="row col-lg-6">
 			  <form role="form" class="form-inline" action="">
 
 
@@ -26,7 +26,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 						  </span>
 					  </div>
 
-				 
+
 			  </form>
 	  	</div>
 	  </div>
