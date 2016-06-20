@@ -142,7 +142,7 @@ function processSchData()
 
 				$(".xx1").on("click",function(e)
 				{
-					$(this).popover({content:"test"});
+					$(this).popover({content:event.data.cid});
 					e.preventDefault();
 				});
 
