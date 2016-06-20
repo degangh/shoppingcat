@@ -25,9 +25,9 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 
 	<div class="row">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for...">
+      <input type="search" class="form-control" placeholder="Search for...">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
+        <button class="btn btn-default" type="button">Search</button>
       </span>
     </div><!-- /input-group -->
 </div>
