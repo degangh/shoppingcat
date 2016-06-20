@@ -126,7 +126,7 @@ function processSchData()
 				{
 					for (var i=0; i<len; i++)
 					{
-						txt += "<tr class='data_row'><td><a href='' data-toggle= 'modal' class='xx1' data-cid ='" + data[i].cid +"'>"+data[i].cname + "</a></td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
+						txt += "<tr class='data_row'><td><a href='' data-toggle= 'popover' class='xx1' data-cid ='" + data[i].cid +"'>"+data[i].cname + "</a></td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
 					}
 
 				}
