@@ -11,7 +11,7 @@ if ($_POST)
 
 	$a = json_decode($r);
 
-	if ($a["reponse_code"] == 200)
+	if ($a["response_code"] == 200)
 	{
 		//
 	}
