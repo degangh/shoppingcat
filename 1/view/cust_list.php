@@ -10,6 +10,11 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	<title>Search User</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="../static/bs/css/bootstrap.css" rel="stylesheet">
+	<style>
+	.input-group > .input-group-btn > .btn, .input-group-btn:last-child > .dropdown-toggle {
+  height: 34px;
+}
+	</style>
 </head>
 
 <body style="padding-top:62px">
