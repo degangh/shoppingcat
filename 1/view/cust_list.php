@@ -13,7 +13,7 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 </head>
 
 <body>
-	<nav class="navbar navbar-fixed-top">
+	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
 	<form role="form" class="form-inline" action="">
 		<div class="row">
