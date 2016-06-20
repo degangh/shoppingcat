@@ -60,10 +60,10 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	        <div class="modal-content">
 	            <div class="modal-header">
 	                <button class="close" data-dismiss="modal">&times;</button>
-	                <h4 class="modal-title">Error 提交错误</h4>
+	                <h4 class="modal-nav"> </h4>
 	            </div>
 				<div class="modal-header">
-	                
+
 	                <h4 class="modal-title"></h4>
 	            </div>
 	            <div class="modal-body">
