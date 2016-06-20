@@ -13,7 +13,8 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 </head>
 
 <body>
-<div class='container'>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
 	<form role="form" class="form-inline" action="">
 		<div class="row">
 			<div class="col-lg-6">
@@ -27,6 +28,12 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 		</div>
 		</div>
 	</form>
+</div>
+</nav>
+
+
+<div class='container'>
+
 
 
 <div><a href="" id="mondalopener">Add Customer 添加新顾客</a></div>
