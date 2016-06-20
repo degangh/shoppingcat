@@ -7,7 +7,14 @@ if ($_POST)
 {
 	$admin_user = new adminUser();
 	header('Content-Type: application/json');
-	echo $admin_user->user_login($_POST['username'],$_POST['password']);
+	$r = $admin_user->user_login($_POST['username'],$_POST['password']);
+
+	$a = json_decode($r);
+
+	if ($a["reponse_code"] == 200)
+	{
+		echo $r;
+	}
 }
 
 else {
