@@ -126,7 +126,7 @@ function processSchData()
 				{
 					for (var i=0; i<len; i++)
 					{
-						txt += "<tr class='data_row'><td><a href='#' data-toggle='popover' data-content='test' class='xx1' data-cid ='" + data[i].cid +"'>"+data[i].cname + "</a></td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
+						txt += "<tr class='data_row'><td><a href='#' data-toggle='modal' class='xx1' data-cid ='" + data[i].cid +"'>"+data[i].cname + "</a></td><td>" + data[i].id_num + "</td><td>" + data[i].mobile + "</td><td>" + data[i].address + " " + data[i].postcode + "</td></tr>";
 					}
 
 				}
@@ -141,10 +141,7 @@ function processSchData()
 
 
 
-
-				//$(".xx1").popover({content:"<a href='' data-toggle='modal' class='tbl_link' data-cid='104'>Customer Info</a>",html:true});
-
-				$(".tbl_link").on("click",{title: "Edit Customer", id: "#genericModal"}, function(event){
+				$(".xx1").on("click",{title: "Edit Customer", id: "#genericModal"}, function(event){
 					alert ($(this).data('cid'));
 
 					$.ajax({type:"POST",
