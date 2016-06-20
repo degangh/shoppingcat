@@ -58,10 +58,10 @@ if ($_SESSION['username'] == "") header ("location:view/login.php");
 	<div id="genericModal" class="modal fade">
 	    <div class="modal-dialog">
 	        <div class="modal-content">
-	            <div class="modal-header">
+	            <div class="modal-header" style="height:10px">
 
 
-  						  <button class="close" data-dismiss="modal" style="border:1px">&times;</button>
+  						  <button class="close" data-dismiss="modal" >&times;</button>
 
 
 	            </div>
