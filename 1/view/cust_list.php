@@ -145,6 +145,7 @@ function processSchData()
 				if (txt != "")
 				{
 					$("#sch_table").append(txt).removeClass("hidden");
+
 					$("#sch_table a").popover({html:true, content:function(){
 						return "<a class='popover_link' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>customer info</a> <br/> Postage Record <br/> Tags";
 
@@ -187,7 +188,7 @@ function processSchData()
 
 				});
 
-			});
+
 
 }
 
