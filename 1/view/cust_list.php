@@ -158,7 +158,7 @@ function processSchData()
 
 
 				$("#sch_table").on("click","popover_link",  function(event){
-					//alert ($(this).data('cid'));
+					alert ("a");
 
 					$.ajax({type:"POST",
 					url: "../agent/cust.info.agent.php",
