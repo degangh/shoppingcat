@@ -86,10 +86,10 @@ class Customer
 
 		if (trim($keyword) !="")
 		{
-			$where = " where cname like '%".$keyword."%' or cname_init_py like '%".$keyword."%' LIMIT " . $start_reocord .", " . $page_size;
+			$where = " where cname like '%".$keyword."%' or cname_init_py like '%".$keyword."%' ";
 		}
 
-		$order = " order by cid desc";
+		$order = " order by cid desc LIMIT " . $start_reocord .", " . $page_size;
 
 		$db = dbConn::dbInit();
 
