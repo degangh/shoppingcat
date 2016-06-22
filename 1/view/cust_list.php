@@ -145,16 +145,23 @@ function processSchData()
 				if (txt != "")
 				{
 					$("#sch_table").append(txt).removeClass("hidden");
+					$("#sch_table a").popover({html:true, content:function(){
+						return "<a class='popover_link' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>customer info</a> <br/> Postage Record <br/> Tags";
+
+					}});
 				}
 
 
+				}});
 
-				$(".xx1").on("click",{title: "Edit Customer", id: "#genericModal"}, function(event){
+
+
+				$("#sch_table").on("click","popover_link", {title: "Edit Customer", id: "#genericModal"}, function(event){
 					//alert ($(this).data('cid'));
 
 					$.ajax({type:"POST",
 					url: "../agent/cust.info.agent.php",
-					data: "cid="+ $(this).data('cid'),
+					data: "cid="+ $(this).attr("data-cid"),
 					success: function(data){
 
 						//var cname = data[0].cname;
