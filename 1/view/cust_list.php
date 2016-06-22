@@ -107,6 +107,8 @@ $(document).ready(function(){
 
 	});
 
+
+
 	$('.modal').on('hidden.bs.modal', function(){
     	$(this).find("form").find("input, textarea").val("");
 });
@@ -147,7 +149,7 @@ function processSchData()
 					$("#sch_table").append(txt).removeClass("hidden");
 
 					$("#sch_table a").popover({html:true, content:function(){
-						return "<a class='popover_link' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>customer info</a> <br/> Postage Record <br/> Tags";
+						return "<a class='popover_link' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>Customer Info</a> <br/> Postage Record <br/> Tags";
 
 					}});
 				}
@@ -157,7 +159,7 @@ function processSchData()
 
 
 
-				$("#sch_table").on("click","popover_link",  function(event){
+				$("#sch_table").on("click",".popover_link",  function(event){
 					alert ("a");
 
 					$.ajax({type:"POST",
