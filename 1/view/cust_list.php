@@ -159,7 +159,7 @@ function processSchData()
 
 
 
-				$("#sch_table").on("click",".popover_link", {id:"genericModal", title:"Edit Customer"} , function(event){
+				$("#sch_table").on("click",".popover_link", {id:"#genericModal", title:"Edit Customer"} , function(event){
 					alert ("a");
 
 					$.ajax({type:"POST",
