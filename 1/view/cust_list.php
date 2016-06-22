@@ -160,8 +160,6 @@ function processSchData()
 
 
 				$("#sch_table").on("click",".popover_link", {id:"#genericModal", title:"Edit Customer"} , function(event){
-					alert ("a");
-
 					$.ajax({type:"POST",
 					url: "../agent/cust.info.agent.php",
 					data: "cid="+ $(this).attr("data-cid"),
