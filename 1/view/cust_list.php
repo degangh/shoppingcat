@@ -176,6 +176,7 @@ function processSchData()
 						$("#cid").val(data[0].cid);
 
 						openModal(event);
+						$(this).popover("hide");
 
 					}
 
