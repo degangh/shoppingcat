@@ -76,13 +76,17 @@ class Customer
 
 	}
 
-	public function list_customer($keyword, $page)
+	public function list_customer($keyword, $page, $page_size = 20)
 	{
+		if ($page == "") $page = 1;
+
+		$start_record = ( $page - 1 ) * $page_size ;
+
 		$sql = "select * from customer";
 
 		if (trim($keyword) !="")
 		{
-			$where = " where cname like '%".$keyword."%' or cname_init_py like '%".$keyword."%'";
+			$where = " where cname like '%".$keyword."%' or cname_init_py like '%".$keyword."%' LIMIT " . $start_reocord .", " . $page_size;
 		}
 
 		$order = " order by cid desc";
