@@ -91,7 +91,7 @@ class Customer
 
 		$order = " order by cid desc LIMIT " . $start_reocord .", " . $page_size;
 
-		echo $$sql.$where.$order;
+		echo $sql.$where.$order;
 
 		$db = dbConn::dbInit();
 
