@@ -186,7 +186,7 @@ function processSchData()
 
 
 				});
-			}
+
 			});
 
 }
