@@ -89,9 +89,9 @@ class Customer
 			$where = " where cname like '%".$keyword."%' or cname_init_py like '%".$keyword."%' ";
 		}
 
-		$order = " order by cid desc LIMIT " . $start_reocord .", " . $page_size;
+		$order = " order by cid desc LIMIT " . $start_record .", " . $page_size;
 
-		echo $sql.$where.$order;
+		//echo $sql.$where.$order;
 
 		$db = dbConn::dbInit();
 
