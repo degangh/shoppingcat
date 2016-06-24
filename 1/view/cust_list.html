@@ -133,7 +133,7 @@ function processSchData()
 				console.log (len);
 				console.log(typeof(data.result));
 
-				if (len > 0)
+				if (typeof(data.result) == "object")
 				{
 					for (var i=0; i<len; i++)
 					{
