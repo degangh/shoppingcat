@@ -137,7 +137,7 @@ function processSchData()
 				{
 					for (var i=0; i<len; i++)
 					{
-						txt += "<tr class='data_row'><td><a href='#' data-toggle='modal' class='xx1' data-cid ='" + data.result[i].cid + "'>"+data.result[i].cname + "</a></td><td>" + data.result[i].id_num + "</td><td>" + data.result[i].mobile + "</td><td>" + data.result[i].address + " " + data.result[i].postcode + "</td></tr>";
+						txt += "<tr class='data_row'><td><a href='#' class = 'list_link' data-toggle='modal' class='xx1' data-cid ='" + data.result[i].cid + "'>"+data.result[i].cname + "</a></td><td>" + data.result[i].id_num + "</td><td>" + data.result[i].mobile + "</td><td>" + data.result[i].address + " " + data.result[i].postcode + "</td></tr>";
 					}
 
 					if (len == 0)
@@ -159,7 +159,7 @@ function processSchData()
 				{
 					$("#sch_table").append(txt).removeClass("hidden");
 
-					$("#sch_table a").popover({html:true, content:function(){
+					$("#sch_table .list_link").popover({html:true, content:function(){
 						return "<a class='popover_link' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>Customer Info</a> <br/> Postage Record <br/> Tags";
 
 					}});
