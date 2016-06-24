@@ -97,8 +97,8 @@ class Customer
 
 		$r = $db->pdo->query($sql.$where.$order);
 
-		$r->fetchAll(PDO::FETCH_ASSOC);
+		return $r->fetchAll(PDO::FETCH_ASSOC);
 
-		return $r;
+
 	}
 }
