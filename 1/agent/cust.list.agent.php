@@ -10,7 +10,9 @@ if($_POST)
 	if ($_SESSION['username'])
 	{
 		$customer = new Customer;
-		echo $customer->list_customer($_POST['keyword'],$page);
+		$r = $customer->list_customer($_POST['keyword'],$page);
+
+		echo json_encode(array("response_code"=>200,"result"=>$r));
 	}
 	else {
 		echo json_encode(array("response_code"=>401));# code...
