@@ -123,13 +123,13 @@ function processSchData()
 			data: "keyword="+ keyword,
 			success: function(data){
 				//alert(data);
-				console.log(data);
+				//console.log(data);
 				var len = data.result.length;
 
 				var txt = "";
 				$("#sch_table tr.data_row").remove();
 
-				alert (data.response_code);
+				//alert (data.response_code);
 
 				if (len > 0)
 				{
@@ -140,7 +140,12 @@ function processSchData()
 
 				}
 				else {
-					txt  = "<tr class = 'data_row' style='text-align:center'><td colspan=4>No Result <b>\"" + keyword + "\" </b> !</td></tr>";
+					if (data.response_code == 401)
+						txt  = "<tr class = 'data_row' style='text-align:center'><td colspan=4><a href='login.php'>Please Login</a>!</td></tr>";
+
+					if (data.response_code == 400)
+						txt  = "<tr class = 'data_row' style='text-align:center'><td colspan=4>Illegal Request!</td></tr>";
+
 				}
 
 				if (txt != "")
