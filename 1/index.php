@@ -19,8 +19,8 @@ echo "<h3>Hello ".$_SESSION['username'].", Shopping Cat CRM</h3>";
 
 ?>
 <ul>
-	<li><a href="view/cust_list.php">Search User</a></li>
-	<li><a href="view/cust_edit.php">Add User</a></li>
+	<li><a href="view/cust_list.html">Search User</a></li>
+
 </ul>
 <script src="static/jquery-2.2.4.min.js"></script>
 <script src="static/bs/js/bootstrap.js"></script>
