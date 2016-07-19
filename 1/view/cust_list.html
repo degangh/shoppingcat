@@ -164,7 +164,7 @@ function processSchData()
 					$("#sch_table").append(txt).removeClass("hidden");
 
 					$("#sch_table .list_link").popover({html:true, content:function(){
-						return "<a class='popover_link' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>Customer Info</a> <br/> Postage Record <br/> Tags";
+						return "<a class='popover_link_1' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>Customer Info</a> <br/> <a class='popover_link_2' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>Postage Record</a> <br/> Tags";
 
 					}});
 				}
@@ -174,7 +174,7 @@ function processSchData()
 
 
 				//start customer link
-				$("#sch_table").on("click",".popover_link", {id:"#genericModal", title:"Edit Customer"} , function(event){
+				$("#sch_table").on("click",".popover_link_1", {id:"#genericModal", title:"Edit Customer"} , function(event){
 					$.ajax({type:"POST",
 					url: "../agent/cust.info.agent.php",
 					data: "cid="+ $(this).attr("data-cid"),
@@ -200,7 +200,10 @@ function processSchData()
 				});//end customer link
 
 				//start postage linke
+				$("#sch_table").on("click",".popover_link_1", {id:"#genericModal", title:"Postage"} , function(event){
+					$(".modal-body").load("../static/html/postage_info.html");
 
+				});
 
 
 				//link postage links
