@@ -141,7 +141,8 @@ $(document).ready(function(){
 	//start postage linke
 	$("#sch_table").on("click",".popover_link_2", {id:"#genericModal", title:"Postage"} , function(event){
 		$(".modal-body").load("../static/html/postage_info.html");
-		processModal();
+		openModal(event);
+		$("#sch_table a").popover("hide");
 
 	});
 	//link postage links
