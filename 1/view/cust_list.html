@@ -108,13 +108,37 @@ $(document).ready(function(){
     	$(this).find("form").find("input, textarea").val("");
 	});
 
+	//start customer link
+	$("#sch_table").on("click",".popover_link_1", {id:"#genericModal", title:"Edit Customer"} , function(event){
+		$.ajax({type:"POST",
+		url: "../agent/cust.info.agent.php",
+		data: "cid="+ $(this).attr("data-cid"),
+		success: function(data){
+
+			//var cname = data[0].cname;
+			$("#cname").val(data[0].cname);
+			$("#cname_init_py").val(data[0].cname_init_py);
+			$("#id_num").val(data[0].id_num);
+			$("#mobile").val(data[0].mobile);
+			$("#address").val(data[0].address);
+			$("#postcode").val(data[0].postcode);
+			$("#comment").val(data[0].comment);
+			$("#cid").val(data[0].cid);
+
+			openModal(event);
+			$("#sch_table a").popover("hide");
+
+		}
+
+		});
+
+	});//end customer link
+
 	//start postage linke
 	$("#sch_table").on("click",".popover_link_2", {id:"#genericModal", title:"Postage"} , function(event){
 		$(".modal-body").load("../static/html/postage_info.html");
 
 	});
-
-
 	//link postage links
 
 
@@ -182,31 +206,7 @@ function processSchData()
 				}});
 
 
-				//start customer link
-				$("#sch_table").on("click",".popover_link_1", {id:"#genericModal", title:"Edit Customer"} , function(event){
-					$.ajax({type:"POST",
-					url: "../agent/cust.info.agent.php",
-					data: "cid="+ $(this).attr("data-cid"),
-					success: function(data){
 
-						//var cname = data[0].cname;
-						$("#cname").val(data[0].cname);
-						$("#cname_init_py").val(data[0].cname_init_py);
-						$("#id_num").val(data[0].id_num);
-						$("#mobile").val(data[0].mobile);
-						$("#address").val(data[0].address);
-						$("#postcode").val(data[0].postcode);
-						$("#comment").val(data[0].comment);
-						$("#cid").val(data[0].cid);
-
-						openModal(event);
-						$("#sch_table a").popover("hide");
-
-					}
-
-					});
-
-				});//end customer link
 
 
 
