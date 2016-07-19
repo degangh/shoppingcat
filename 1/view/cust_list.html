@@ -88,6 +88,8 @@ $(document).ready(function(){
 	$.getScript("../static/js/edit_customer.js");
 
 	processModal();
+
+
 	processSchData();
 
 	$("#btn_search").on("click",processSchData);
@@ -110,6 +112,8 @@ $(document).ready(function(){
 
 	//start customer link
 	$("#sch_table").on("click",".popover_link_1", {id:"#genericModal", title:"Edit Customer"} , function(event){
+		$(".modal-body").load("../static/html/customer_form.html");
+
 		$.ajax({type:"POST",
 		url: "../agent/cust.info.agent.php",
 		data: "cid="+ $(this).attr("data-cid"),
