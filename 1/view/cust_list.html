@@ -103,10 +103,19 @@ $(document).ready(function(){
 	});
 
 
-
+	//clear input content
 	$('.modal').on('hidden.bs.modal', function(){
     	$(this).find("form").find("input, textarea").val("");
 	});
+
+	//start postage linke
+	$("#sch_table").on("click",".popover_link_2", {id:"#genericModal", title:"Postage"} , function(event){
+		$(".modal-body").load("../static/html/postage_info.html");
+
+	});
+
+
+	//link postage links
 
 
 });
@@ -199,14 +208,7 @@ function processSchData()
 
 				});//end customer link
 
-				//start postage linke
-				$("#sch_table").on("click",".popover_link_2", {id:"#genericModal", title:"Postage"} , function(event){
-					$(".modal-body").load("../static/html/postage_info.html");
 
-				});
-
-
-				//link postage links
 
 
 
