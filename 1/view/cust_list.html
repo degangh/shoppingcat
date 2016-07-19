@@ -65,7 +65,7 @@
 	            </div>
 
 				<div class="modal-body">
-	                <p></p>
+	            <p></p>
 	            </div>
 	            <div class="modal-footer">
 	                <button class="btn btn-default" data-dismiss="modal">
@@ -86,6 +86,7 @@ $(document).ready(function(){
 	$(".modal-body").load("../static/html/customer_form.html");
 	//preload js
 	$.getScript("../static/js/edit_customer.js");
+
 	processModal();
 	processSchData();
 
@@ -172,7 +173,7 @@ function processSchData()
 				}});
 
 
-
+				//start customer link
 				$("#sch_table").on("click",".popover_link", {id:"#genericModal", title:"Edit Customer"} , function(event){
 					$.ajax({type:"POST",
 					url: "../agent/cust.info.agent.php",
@@ -196,12 +197,13 @@ function processSchData()
 
 					});
 
+				});//end customer link
+
+				//start postage linke
 
 
 
-
-
-				});
+				//link postage links
 
 
 
