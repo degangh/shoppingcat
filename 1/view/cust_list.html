@@ -14,7 +14,7 @@
 <body style="padding-top:62px">
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <div class="container-fluid">
-		  <div class="row col-lg-6">
+		  <div class="row col-md-6">
 			  <form role="form" class="form-inline" action="">
 
 
@@ -77,8 +77,11 @@
 <script src="../static/bs/js/bootstrap.js"></script>
 <script>
 $(document).ready(function(){
-	//preload form html
+	//preload form html pages
 	$(".modal-body").load("../static/html/customer_form.html");
+	$(".modal-body").load("../static/html/postage_info.html");
+
+
 	//preload js
 	$.getScript("../static/js/edit_customer.js");
 
@@ -148,8 +151,6 @@ $(document).ready(function(){
 function processSchData()
 {
 
-
-
 			//alert("clicked");
 			keyword = $("#keyword").val();
 			//alert(keyword);
@@ -166,8 +167,8 @@ function processSchData()
 				$("#sch_table tr.data_row").remove();
 
 				console.log (data.response_code);
-				console.log (len);
-				console.log(typeof(data.result));
+				//console.log (len);
+				//console.log(typeof(data.result));
 
 				if (typeof(data.result) == "object")
 				{
@@ -205,13 +206,6 @@ function processSchData()
 
 
 				}});
-
-
-
-
-
-
-
 
 }
 
