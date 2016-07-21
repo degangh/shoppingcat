@@ -36,7 +36,7 @@
 
 
 
-<div><a href="" id="mondalopener">Add Customer 添加新顾客</a></div>
+<div><a href="#" id="mondalopener">Add Customer 添加新顾客</a></div>
 <div>
 	<table id="sch_table" class="hidden table table-striped">
 	    <tr>
@@ -148,9 +148,10 @@ $(document).ready(function(){
 	});
 	//link postage links
 
+	//add handler
 	$("#mondalopener").on("click",{id: "#genericModal", title: "Add Customer"}, function(event){
 		$(".modal-body").load("../static/html/customer_form.html");
-		openModal;
+		openModal(event);
 	});
 
 
