@@ -106,6 +106,7 @@ $(document).ready(function(){
 	//clear input content
 	$('.modal').on('hidden.bs.modal', function(){
     	$(this).find("form").find("input, textarea").val("");
+		$(".modal-body").load("../static/html/transition.html");
 	});
 
 	//start customer link
