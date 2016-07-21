@@ -88,7 +88,9 @@ $(document).ready(function(){
 	processModal();
 
 
-	processSchData();
+	//processSchData();
+
+
 
 	$("#btn_search").on("click",processSchData);
 
@@ -145,6 +147,11 @@ $(document).ready(function(){
 
 	});
 	//link postage links
+
+	$("#mondalopener").on("click",{id: "#genericModal", title: "Add Customer"}, function(event){
+		$(".modal-body").load("../static/html/customer_form.html");
+		openModal;
+	});
 
 
 });
