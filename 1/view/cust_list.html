@@ -148,6 +148,14 @@ $(document).ready(function(){
 	});
 	//link postage links
 
+	$("#sch_table").on("click",".popover_link_3", {id:"#genericModal", title:"Tags"} , function(event){
+		$(".modal-body").load("../static/html/tags.html");
+		openModal(event);
+		$("#sch_table a").popover("hide");
+
+	});
+	//link postage links
+
 	//add handler
 	$("#mondalopener").on("click",{id: "#genericModal", title: "Add Customer"}, function(event){
 		$(".modal-body").load("../static/html/customer_form.html");
@@ -208,7 +216,7 @@ function processSchData()
 					$("#sch_table").append(txt).removeClass("hidden");
 
 					$("#sch_table .list_link").popover({html:true, content:function(){
-						return "<a class='popover_link_1' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>Customer Info</a> <br/> <a class='popover_link_2' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>Postage Record</a> <br/> Tags";
+						return "<a class='popover_link_1' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>Customer Info</a> <br/> <a class='popover_link_2' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>Postage Record</a> <br/> <a class='popover_link_3' href='javascript:void(0)' data-cid='" + $(this).attr("data-cid") + "'>Tags</a>";
 
 					}});
 				}
