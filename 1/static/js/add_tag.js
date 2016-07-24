@@ -12,6 +12,17 @@ $("#add_tag_btn").click(function(event){
 		flag = false;
 	}
 
+	if (flag == true)
+	{
+		console.log(tag_text);
+		console.log(cid);
+
+	}
+
+	else {
+		alert ("Incorrect Input");
+	}
+
 
 	event.preventDefault();
 
