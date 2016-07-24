@@ -37,7 +37,7 @@ class Tag
 
 		$stmt = $db->pdo->prepare($sql);
 
-		$stmt->bindValue(":cid");
+		$stmt->bindValue(":cid", $cid, PDO::PARAM_INT);
 
 		$r = $db->pdo->query($sql);
 
