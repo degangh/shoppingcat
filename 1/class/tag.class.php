@@ -29,9 +29,9 @@ class Tag
 		}
 	}
 
-	public function list_tag_by_userid($user_id)
+	public function list_tag_by_cid($cid)
 	{
-		$sql = "select * from tag where user_id = :user_id";
+		$sql = "select * from tag where cid = :cid";
 
 		$db = dbConn::dbInit();
 
