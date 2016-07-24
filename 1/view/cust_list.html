@@ -159,6 +159,8 @@ $(document).ready(function(){
 		$(".modal-body").load("../static/html/tags.html",function(){
 
 			$("#cid").val(cid);
+
+			$("#tag_list").val("kkkkk");
 		});
 
 		$.getScript("../static/js/add_tag.js");
@@ -170,7 +172,7 @@ $(document).ready(function(){
 
 			console.log(data.response_code);
 
-			$("#tag_list").val("kkkkk");
+
 
 		}
 		});
