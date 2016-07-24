@@ -151,12 +151,12 @@ $(document).ready(function(){
 	$("#sch_table").on("click",".popover_link_3", {id:"#genericModal", title:"Tags"} , function(event){
 		$(".modal-body").load("../static/html/tags.html",function(){
 			alert ("loaded");
-			$("#cid").val($(this).attr("data-cid"););
+			$("#cid").val($(this).attr("data-cid"));
 
 		});
 		$.getScript("../static/js/add_tag.js");
 
-		
+
 		openModal(event);
 
 		$("#sch_table a").popover("hide");
