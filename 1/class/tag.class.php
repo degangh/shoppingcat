@@ -3,7 +3,7 @@ class Tag
 {
 	public function add_tag($user_id, $tag_text)
 	{
-		$sql = "insert into tag set user_id = :user_id, tag_text = :tag_text";
+		$sql = "insert into tag set cid = :cid, tag_text = :tag_text";
 
 		$db = dbConn::dbInit();
 
@@ -11,7 +11,7 @@ class Tag
 
 		//print_r ($stmt);
 
-		$stmt->bindValue(":user_id",$user_id,PDO::PARAM_STR);
+		$stmt->bindValue(":cid",$cid,PDO::PARAM_INT);
 		$stmt->bindParam(":tag_text",$tag_text,PDO::PARAM_STR);
 
 		$stmt->execute();
@@ -20,7 +20,7 @@ class Tag
 
 		print_r ($res);
 
-		if ($res[0]="00000")
+		if ($res[0] == "00000")
 		{
 			return TRUE;
 		}
