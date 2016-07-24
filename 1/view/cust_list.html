@@ -170,8 +170,19 @@ $(document).ready(function(){
 		success: function(data){
 
 			console.log(data.response_code);
-			$("#tag_list").text("kkkkk");
-			alert ("lll");
+
+			var len = data.result.length;
+
+			if (data.resonse_code == 200)
+			{
+				for (var n =1; n< len; n++)
+				{
+					$("#tag_list").append(data.result[i].tag_text);
+				}
+			}
+
+
+			//alert ("lll");
 
 
 		}
