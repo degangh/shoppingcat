@@ -31,8 +31,8 @@ $("#add_tag_btn").click(function(event){
 				alert ("标签保存成功");
 				$("#loading_placeholder").addClass("hidden");
 				//window.location.replace("cust_list.php");
-				$("#genericModal").modal('hide');
-				processSchData();
+				//$("#genericModal").modal('hide');
+				//processSchData();
 			}
 			else{
 				alert(data.response_code);
