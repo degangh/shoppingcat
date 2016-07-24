@@ -39,11 +39,13 @@ class Tag
 
 		$stmt->bindValue(":cid", $cid, PDO::PARAM_INT);
 
-		$r = $db->pdo->query($sql);
+		$stmt->execute();
+
+		$r = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 		print_r ($r);
 
-		return $r->fetchAll(PDO::FETCH_ASSOC);
+		return $r;
 	}
 
 }
