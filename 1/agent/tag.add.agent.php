@@ -9,7 +9,7 @@ if ($_POST)
 {
 	if ($_SESSION["username"])
 	{
-		echo "";
+		//echo "";
 		$tag = new Tag();
 		$r = $tag($_POST['user_id'], $_POST['tag_text']);
 
