@@ -30,6 +30,7 @@ $("#add_tag_btn").click(function(event){
 			{
 				alert ("标签保存成功");
 				$("#loading_placeholder").addClass("hidden");
+				$("#tag_text").val("");
 				//window.location.replace("cust_list.php");
 				//$("#genericModal").modal('hide');
 				//processSchData();
