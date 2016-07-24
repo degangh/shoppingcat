@@ -43,8 +43,6 @@ class Tag
 
 		$r = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-		print_r ($r);
-
 		return $r;
 	}
 
