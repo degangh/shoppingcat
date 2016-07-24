@@ -152,7 +152,7 @@ $(document).ready(function(){
 		$(".modal-body").load("../static/html/tags.html");
 		$.getScript("../static/js/add_tag.js");
 		openModal(event);
-		console.log($(this).attr("data-cid"));
+		$("#cid").val(console.log($(this).attr("data-cid")));
 		$("#sch_table a").popover("hide");
 
 	});
