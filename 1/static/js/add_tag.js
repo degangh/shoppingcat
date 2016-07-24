@@ -34,7 +34,7 @@ $("#add_tag_btn").click(function(event){
 				//window.location.replace("cust_list.php");
 				//$("#genericModal").modal('hide');
 				//processSchData();
-				$("#tag_list").append("<span class=\"label label-pill label-warning\">" + tag_text +"</span> ");
+				$("#tag_list").append("<span class=\"badge\">" + tag_text +"</span> ");
 			}
 			else{
 				alert(data.response_code);
