@@ -149,7 +149,9 @@ $(document).ready(function(){
 	//link postage links
 
 	$("#sch_table").on("click",".popover_link_3", {id:"#genericModal", title:"Tags"} , function(event){
-		$(".modal-body").load("../static/html/tags.html");
+		$(".modal-body").load("../static/html/tags.html",function(){
+			alert ("loaded");
+		});
 		$.getScript("../static/js/add_tag.js");
 
 		var cid = $(this).attr("data-cid");
