@@ -5,7 +5,7 @@ $("#add_tag_btn").click(function(event){
 
 	//console.log($("#cid").val());
 
-	console.log(cid);
+	console.log("kk");
 
 	event.preventDefault();
 
