@@ -169,11 +169,14 @@ $(document).ready(function(){
 		data: "cid="+ $(this).attr("data-cid"),
 		success: function(data){
 
-			console.log(data.response_code);
+
 
 			var len = data.result.length;
 
-			if (data.resonse_code == 200)
+			console.log(data.response_code);
+
+
+			if (data.response_code == 200)
 			{
 				for (var n =1; n< len; n++)
 				{
