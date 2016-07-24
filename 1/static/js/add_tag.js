@@ -8,7 +8,7 @@ $("#add_tag_btn").click(function(event){
 
 	if (tag_text == "")
 	{
-		$("#cname").closest(".form-group").addClass("has-error");
+		$("#tag_text").closest(".form-group").addClass("has-error");
 		flag = false;
 	}
 
