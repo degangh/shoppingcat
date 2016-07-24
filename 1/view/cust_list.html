@@ -156,7 +156,7 @@ $(document).ready(function(){
 		});
 		$.getScript("../static/js/add_tag.js");
 
-		alert ($(this).attr("data-cid"));
+		alert (event.data.data-cid);
 		openModal(event);
 
 		$("#sch_table a").popover("hide");
