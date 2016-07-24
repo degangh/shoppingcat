@@ -12,6 +12,8 @@ $("#add_tag_btn").click(function(event){
 		flag = false;
 	}
 
+	event.preventDefault();
+
 	if (flag == true)
 	{
 		console.log(tag_text);
@@ -44,7 +46,7 @@ $("#add_tag_btn").click(function(event){
 	}
 
 
-	event.preventDefault();
+
 
 
 })
