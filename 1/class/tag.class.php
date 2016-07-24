@@ -1,7 +1,7 @@
 <?
 class Tag
 {
-	public function add_tag($user_id, $tag_text)
+	public function add_tag($cid, $tag_text)
 	{
 		$sql = "insert into tag set cid = :cid, tag_text = :tag_text";
 
