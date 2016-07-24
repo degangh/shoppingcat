@@ -11,7 +11,7 @@ if ($_POST)
 	{
 		//echo "";
 		$tag = new Tag();
-		$r = $tag($_POST['user_id'], $_POST['tag_text']);
+		$r = $tag->add_tag($_POST['user_id'], $_POST['tag_text']);
 
 		if ($r == TRUE)
 		{
