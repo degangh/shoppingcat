@@ -155,9 +155,8 @@ $(document).ready(function(){
 
 		$(".modal-body").load("../static/html/tags.html",function(){
 
-			$("#cid").val(cid);
+			$("#cid").val($(this).attr("data-cid"));
 
-			console.log(cid);
 
 		});
 
