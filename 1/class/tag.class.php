@@ -37,7 +37,7 @@ class Tag
 
 		$stmt = $db->pdo->prepare($sql);
 
-		$stmt->bindValue(":user_id");
+		$stmt->bindValue(":cid");
 
 		$r = $db->pdo->query($sql);
 
