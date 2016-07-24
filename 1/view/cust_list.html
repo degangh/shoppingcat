@@ -148,16 +148,17 @@ $(document).ready(function(){
 	});
 	//link postage links
 
-	$("#sch_table").on("click",".popover_link_3", {id:"#genericModal", title:"Tags", cid: $(this).attr("data-cid")} , function(event){
+	$("#sch_table").on("click",".popover_link_3", {id:"#genericModal", title:"Tags")} , function(event){
 		$(".modal-body").load("../static/html/tags.html",function(){
-			alert ($(this).attr("data-cid"));
+
 			$("#cid").val("kk");
 
 		});
 		$.getScript("../static/js/add_tag.js");
 
-		alert (event.data.data-cid);
 		openModal(event);
+
+		$("#cid").val("kkk");	
 
 		$("#sch_table a").popover("hide");
 
