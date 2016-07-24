@@ -3,7 +3,7 @@ $("#add_tag_btn").click(function(event){
 
 	var cid = $(this).attr("data-cid");
 
-	console.log(cid)
+	console.log($(this).attr("data-cid"))
 
 	event.preventDefault();
 
