@@ -17,7 +17,7 @@ class Tag
 		$stmt->execute();
 
 		$res = $stmt->errorInfo();
-
+		
 		print_r ($res);
 
 		if ($res[0] == "00000")
