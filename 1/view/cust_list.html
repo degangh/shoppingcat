@@ -151,8 +151,9 @@ $(document).ready(function(){
 	$("#sch_table").on("click",".popover_link_3", {id:"#genericModal", title:"Tags"} , function(event){
 		$(".modal-body").load("../static/html/tags.html");
 		$.getScript("../static/js/add_tag.js");
+		var cid = $(this).attr("data-cid");
 		openModal(event);
-		$("#cid").val("aa");
+
 		$("#sch_table a").popover("hide");
 
 	});
