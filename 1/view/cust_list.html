@@ -150,6 +150,7 @@ $(document).ready(function(){
 	});
 	//link postage links
 
+	//tag link
 	$("#sch_table").on("click",".popover_link_3", {id:"#genericModal", title:"Tags"} , function(event){
 
 
@@ -158,14 +159,10 @@ $(document).ready(function(){
 		$(".modal-body").load("../static/html/tags.html",function(){
 
 			$("#cid").val(cid);
-
-
 		});
 
 		$.getScript("../static/js/add_tag.js");
 
-
-		
 		openModal(event);
 
 
@@ -173,7 +170,7 @@ $(document).ready(function(){
 		$("#sch_table a").popover("hide");
 
 	});
-	//link postage links
+	//link tag links
 
 	//add handler
 	$("#mondalopener").on("click",{id: "#genericModal", title: "Add Customer"}, function(event){
