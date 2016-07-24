@@ -153,6 +153,9 @@ $(document).ready(function(){
 		$.getScript("../static/js/add_tag.js");
 
 		var cid = $(this).attr("data-cid");
+
+		console.log(cid);
+		
 		openModal(event);
 
 		$("#sch_table a").popover("hide");
