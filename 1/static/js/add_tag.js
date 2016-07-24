@@ -1,11 +1,17 @@
 $("#add_tag_btn").click(function(event){
-	//console.log("clicked");
+	$(".form-group").removeClass("has-error");
 
+	var flag = true;
 
+	var tag_text = $("#tag_text").val();
+	var cid = $("#cid").val();
 
-	//console.log($("#cid").val());
+	if (tag_text == "")
+	{
+		$("#cname").closest(".form-group").addClass("has-error");
+		flag = false;
+	}
 
-	console.log($("#cid").val());
 
 	event.preventDefault();
 
