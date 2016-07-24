@@ -1,5 +1,5 @@
 <?
-class Tag()
+class Tag
 {
 	public function add_tag($user_id, $tag_text)
 	{
