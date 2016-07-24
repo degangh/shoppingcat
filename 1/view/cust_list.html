@@ -176,6 +176,7 @@ $(document).ready(function(){
 	//add handler
 	$("#mondalopener").on("click",{id: "#genericModal", title: "Add Customer"}, function(event){
 		$(".modal-body").load("../static/html/customer_form.html");
+		$.getScript("../static/js/edit_customer.js");
 		openModal(event);
 	});
 
