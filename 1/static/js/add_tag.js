@@ -22,7 +22,7 @@ $("#add_tag_btn").click(function(event){
 		var query_str = "cid=" + cid + "&tag_text=" + tag_text;
 
 		$.ajax({type:"POST",
-		url: "../agent/add.tag.agent.php",
+		url: "../agent/tag.add.agent.php",
 		data: query_str,
 
 		success: function(data){
