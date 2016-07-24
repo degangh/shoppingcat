@@ -41,6 +41,8 @@ class Tag
 
 		$r = $db->pdo->query($sql);
 
+		print_r ($r);
+
 		return $r->fetchAll(PDO::FETCH_ASSOC);
 	}
 
