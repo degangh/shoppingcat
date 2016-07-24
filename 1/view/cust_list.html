@@ -163,6 +163,16 @@ $(document).ready(function(){
 
 		$.getScript("../static/js/add_tag.js");
 
+		$.ajax({type:"POST",
+		url: "../agent/tag.list.agent.php",
+		data: "cid="+ $(this).attr("data-cid"),
+		success: function(data){
+
+			console.log(data.response_code);
+
+		}
+		});
+
 		openModal(event);
 
 
