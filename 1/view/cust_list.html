@@ -8,6 +8,8 @@
 	.input-group > .input-group-btn > .btn, .input-group-btn:last-child > .dropdown-toggle {
   height: 34px;
 }
+
+.my_badge {font-size:14px;margin-bottom:10px}
 	</style>
 </head>
 
@@ -180,7 +182,7 @@ $(document).ready(function(){
 			{
 				for (var n =1; n< len; n++)
 				{
-					$("#tag_list").append("<span class=\"badge\" style=\"font-size:14px;margin-bottom:10px\">" + data.result[n].tag_text +"</span> ");
+					$("#tag_list").append("<span class=\"badge my-badge\" >" + data.result[n].tag_text +"</span> ");
 				}
 			}
 
