@@ -148,7 +148,7 @@ $(document).ready(function(){
 	});
 	//link postage links
 
-	$("#sch_table").on("click",".popover_link_3", {id:"#genericModal", title:"Tags")} , function(event){
+	$("#sch_table").on("click",".popover_link_3", {id:"#genericModal", title:"Tags"} , function(event){
 		$(".modal-body").load("../static/html/tags.html",function(){
 
 			$("#cid").val("kk");
@@ -158,7 +158,7 @@ $(document).ready(function(){
 
 		openModal(event);
 
-		$("#cid").val("kkk");	
+		$("#cid").val("kkk");
 
 		$("#sch_table a").popover("hide");
 
