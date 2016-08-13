@@ -117,7 +117,7 @@ $(document).ready(function(){
 	$("#sch_table").on("click",".popover_link_1", {id:"#genericModal", title:"Edit Customer"} , function(event){
 
 		$(".modal-body").load("../static/html/customer_form.html");
-		$.getScript("../static/js/edit_customer.js");
+		$.getScript("../static/js/edit_customer.js", function(){alert("ok")};
 
 		$.ajax({type:"POST",
 		url: "../agent/cust.info.agent.php",
