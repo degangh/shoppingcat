@@ -206,8 +206,8 @@ $(document).ready(function(){
 
 	//add handler
 	$("#mondalopener").on("click",{id: "#genericModal", title: "Add Customer"}, function(event){
-		$(".modal-body").load("../static/html/customer_form.html");
-		$.getScript("../static/js/edit_customer.js",function(){console.log("new customer script loaded")});
+		$(".modal-body").load("../static/html/customer_form.html",function(){$.getScript("../static/js/edit_customer.js",function(){console.log("new customer script loaded")}); });
+
 		openModal(event);
 	});
 
