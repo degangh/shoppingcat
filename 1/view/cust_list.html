@@ -165,7 +165,9 @@ $(document).ready(function(){
 
 		});
 
-		$.getScript("../static/js/add_tag.js",function(){console.log("tag script loaded")});
+		var x = 0;
+
+		$.getScript("../static/js/add_tag.js",function(){console.log("tag script loaded " + x); x += 1;});
 
 		$.ajax({type:"POST",
 		url: "../agent/tag.list.agent.php",
