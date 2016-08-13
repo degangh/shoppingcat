@@ -77,7 +77,7 @@
 
 <script src="../static/jquery-2.2.4.min.js"></script>
 <script src="../static/bs/js/bootstrap.js"></script>
-<script src="../static/js/add_tag.js"></script>
+
 <script>
 $(document).ready(function(){
 	//preload form html pages
@@ -165,7 +165,7 @@ $(document).ready(function(){
 
 		});
 
-		//$.getScript("../static/js/add_tag.js",function(){console.log("tag script loaded")});
+		$.getScript("../static/js/add_tag.js",function(){console.log("tag script loaded")});
 
 		$.ajax({type:"POST",
 		url: "../agent/tag.list.agent.php",
