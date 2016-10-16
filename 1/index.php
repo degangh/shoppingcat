@@ -3,7 +3,7 @@ session_start();
 include_once "config/db.php";
 include_once "class/customer.class.php";
 
-if ($_SESSION['username'] == "") header ("location:view/login.php");
+if ($_SESSION['username'] == "") header ("location:view/login.html");
 ?>
 <html>
 <head>
