@@ -4,6 +4,8 @@ include_once "config/db.php";
 include_once "class/customer.class.php";
 
 if ($_SESSION['username'] == "") header ("location:view/login.html");
+else header ("location:view/cust_list.php");
+
 ?>
 <html>
 <head>
