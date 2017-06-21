@@ -1,6 +1,3 @@
 line 1 (small mac)
-<<<<<<< .mine
 line 2 (small mac)
-=======
 line 3 (small mac)
->>>>>>> .r693
