@@ -31,7 +31,7 @@ if (isset($postdata)) {
         echo json_encode(array("login_success"=>true, "username" => $request->username, "token"=>md5($request->password."server_salt")));
     }
 	else {
-		echo json_encode(array("login_success" => false, "error" => "Wrong User Name or Password"));
+		echo json_encode(array("login_success" => false, "error" => "Wrong User Name or Password", "message" => $_SERVER['REQUEST_METHOD']));
 	}
 }
 else {
