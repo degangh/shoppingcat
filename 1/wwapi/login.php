@@ -1,5 +1,9 @@
 <?php
-
+if (isset($_SERVER['HTTP_ORIGIN'])) {
+	header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
+	header('Access-Control-Allow-Credentials: true');
+	header('Access-Control-Max-Age: 86400');    // cache for 1 day
+}
 
 
 //http://stackoverflow.com/questions/15485354/angular-http-post-to-php-and-undefined
